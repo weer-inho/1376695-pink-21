@@ -8,25 +8,27 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/pink.svg" alt="Барбершоп 'Бородинский'" width="74" height="23">
-      </a>
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo">
+          <img src="img/pink.svg" alt="Барбершоп 'Бородинский'" width="74" height="23">
+        </a>
+      </div>
       <nav class="main-nav">
         <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+              <a class="site-list__link"><span class="site-list__link-text">Главная</span></a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
+              <a class="site-list__link" href="photo.html"><span class="site-list__link-text">Фотографии</span></a>
             </li>
             <li class="site-list__item">
-              <a href="contest.html">Конкурс</a>
+              <a class="site-list__link" href="contest.html"><span class="site-list__link-text">Конкурс</span></a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru/">HTML ACADEMY</a>
+              <a class="site-list__link" href="https://htmlacademy.ru/"><span class="site-list__link-text">HTML ACADEMY</span></a>
             </li>
           </ul>
       </nav>
@@ -41,6 +43,7 @@
         </div>
         <div class="add__access">
           <button class="add__download">Скачать приложение</button>
+          <div class="add__icons"></div>
           <p class="add__available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
@@ -49,7 +52,7 @@
         <h2 class="visually-hidden">Устали от серости мегаполиса?</h2>
         <div class="general__text-wrapper">
           <p class="general__text">Устали от серости мегаполиса?</p>
-          <p class="general__text2">Нам есть, что вам предложить!</p>
+          <p class="general__text">Нам есть, что вам предложить!</p>
         </div>
         <div class="general__list-wrapper">
           <ul class="general__list">
@@ -91,51 +94,73 @@
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
           </ul>
-          <div class="switcher">
-            <button class="switcher__toggle switcher__toggle--current">1</button>
-            <button class="switcher__toggle">2</button>
-            <button class="switcher__toggle">3</button>
+          <div class="switcher switcher--reviews">
+            <button class="switcher__toggle switcher__toggle--current"><span class="switcher_number visually-hidden">1</span></button>
+            <button class="switcher__toggle"><span class="switcher_number visually-hidden">2</span></button>
+            <button class="switcher__toggle"><span class="switcher_number visually-hidden">3</span></button>
           </div>
         </div>
       </section>
 
       <section class="rates">
         <table class="rates__table">
-            <tr class="rates__table-row">
-              <th><br></th>
-              <th>
-                База<br>1,99 USD
-              </th>
-              <th>
-                Стандарт<br>3,99 USD
-              </th>
-              <th>
-                Анлим<br>9,99 USD
-              </th>
-            </tr>
-            <tr class="rates__table-row">
-              <td>Розовый фильтр</td>
-              <td>Да</td>
-              <td>Да</td>
-              <td>Да</td>
-            </tr>
-            <tr class="rates__table-row">
-              <td>Смайлики</td>
-              <td>Нет</td>
-              <td>Да</td>
-              <td>Да</td>
-            </tr>
-            <tr class="rates__table-row">
-              <td>Комментарии</td>
-              <td>Нет</td>
-              <td>Нет</td>
-              <td>Да</td>
-            </tr>
+            <thead>
+              <tr class="rates__table-row-subscription">
+                <th class="rates__table-subscription-cell rates__first-column"></th>
+                <th class="rates__table-subscription-cell rates__base-column">
+                  База<br><span class="rates__table-money">1.99 USD</span>
+                </th>
+                <th class="rates__table-subscription-cell rates__standart-column">
+                  Стандарт<br><span class="rates__table-money">3,99 USD</span>
+                </th>
+                <th class="rates__table-subscription-cell rates__unlim-column">
+                  Анлим<br><span class="rates__table-money">9,99 USD</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="rates__table-row-filter">
+                <th class="rates__table-subscription-cell rates__first-column">Розовый фильтр</th>
+                <td class="rates__table-filter-cell rates__base-column">
+                  <img class="rates__table-yes-icon" src="img/yes.svg" alt="Да">
+                </td>
+                <td class="rates__table-filter-cell rates__standart-column">
+                  <img class="rates__table-yes-icon" src="img/yes.svg" alt="Да">
+                </td>
+                <td class="rates__table-filter-cell rates__unlim-column">
+                  <img class="rates__table-yes-icon" src="img/yes.svg" alt="Да">
+                </td>
+              </tr>
+              <tr class="rates__table-row-smiles">
+                <th class="rates__table-subscription-cell rates__first-column">Смайлики</th>
+                <td class="rates__table-smiles-cell rates__base-column">
+                  <img class="rates__table-no-icon" src="img/no.svg" alt="Нет">
+                </td>
+                <td class="rates__table-smiles-cell rates__standart-column">
+                  <img class="rates__table-yes-icon" src="img/yes.svg" alt="Да">
+                </td>
+                <td class="rates__table-smiles-cell rates__unlim-column">
+                  <img class="rates__table-yes-icon" src="img/yes.svg" alt="Да">
+                </td>
+              </tr>
+              <tr class="rates__table-row-coments">
+                <th class="rates__table-subscription-cell rates__first-column">Комментарии</th>
+                <td class="rates__table-coments-cell rates__base-column">
+                  <img class="rates__table-no-icon" src="img/no.svg" alt="Нет">
+                </td>
+                <td class="rates__table-coments-cell rates__standart-column">
+                  <img class="rates__table-no-icon" src="img/no.svg" alt="Нет">
+                </td>
+                <td class="rates__table-coments-cell rates__unlim-column">
+                  <img class="rates__table-yes-icon" src="img/yes.svg" alt="Да">
+                </td>
+              </tr>
+            </tbody>
         </table>
-          <div class="switcher">
-            <button class="switcher__toggle switcher__toggle--current">1</button>
-            <button class="switcher__toggle">2</button>
-            <button class="switcher__toggle">3</button>
+          <div class="switcher switcher--table">
+            <button class="switcher__toggle switcher__toggle--current"><span class="switcher_number visually-hidden">1</span></button>
+            <button class="switcher__toggle"><span class="switcher_number visually-hidden">2</span></button>
+            <button class="switcher__toggle"><span class="switcher_number visually-hidden">3</span></button>
           </div>
       </section>
 
@@ -164,27 +189,38 @@
         <!-- Тут будет карта -->
       </section>
 
-      <footer class="footer">
-        <div class="footer__wrapper">
-          <h2 class="footer-heading">PINK</h2>
-          <ul class="footer__social-list social">
-            <li class="footer__social-list-item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-            </li>
-            <li class="footer__social-list-item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            </li>
-            <li class="footer__social-list-item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
-      </footer>
-
     </main>
+
+    <footer class="footer">
+      <div class="footer__logo-wrapper">
+        <img class="footer__logo-glasses" src="img/glasses.svg">
+        <img class="footer__logo-PINK" src="img/pink (1).svg">
+      </div>
+      <div class="footer__wrapper">
+        <ul class="footer__social-list social">
+          <li class="footer__social-list-item">
+            <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">
+              <img class="footer__social-logo" src="img/twitter.svg" alt="Мы в Твиттере">
+            </a>
+          </li>
+          <li class="footer__social-list-item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+              <img class="footer__social-logo" src="img/facebook.svg" alt="Мы в Фейсбуке">
+            </a>
+          </li>
+          <li class="footer__social-list-item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <img class="footer__social-logo" src="img/youtube.svg" alt="Мы на YouTube">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="footer__copyright-logo" src="img/htmlacademy.svg" alt="HTML ACADEMY" width="27" height="34">
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

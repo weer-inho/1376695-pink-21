@@ -1,0 +1,50 @@
+.rates {
+  position: relative;
+  text-align: center;
+  min-height: 280px;
+  background-color: #e5e5e5;
+}
+
+.rates__table-row-subscription {
+  background-color: @deepblue;
+  color: @white;
+  .osbold();
+  text-transform: uppercase;
+}
+
+.rates__table {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  max-width: 100%;
+  border-spacing: 0;
+}
+
+.rates__table-money {
+  .oslight();
+  font-size: 18px;
+}
+
+.rates__first-column {
+  background-color: @white;
+  .oslight();
+  font-size: 14px;
+}
+
+.rates__table-subscription-cell,
+.rates__table-filter-cell,
+.rates__table-smiles-cell,
+.rates__table-coments-cell {
+  background-color: @white;
+  border: 1px solid #e5e5e5;
+}
+
+thead .rates__table-subscription-cell,
+thead .rates__table-filter-cell,
+thead .rates__table-smiles-cell,
+thead .rates__table-coments-cell {
+  background-color: @deepblue;
+}
+
+.rates__table-row-subscription .rates__table-subscription-cell.rates__first-column {
+  background-color: #e5e5e5;
+}
