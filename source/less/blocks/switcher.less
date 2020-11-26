@@ -1,0 +1,49 @@
+.switcher {
+  position: absolute;
+}
+
+.switcher--reviews {
+  bottom: 20px;
+  left: 50%;
+  margin: 0 0 0 -22px;
+}
+
+.switcher--table {
+  bottom: 20px;
+  left: 50%;
+  margin: 0 0 0 -22px;
+}
+
+
+.switcher__toggle {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  height: 16px;
+  width: 16px;
+}
+
+.switcher__toggle::before {
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  content: "";
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: #bfc3c8;
+}
+
+.switcher__toggle--current::before {
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  content: "";
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  border: 3px solid #283645;
+  background-color: @white;
+}
