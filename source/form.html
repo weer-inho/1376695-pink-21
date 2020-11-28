@@ -8,25 +8,27 @@
 </head>
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="img/pink.svg" alt="Барбершоп 'Бородинский'" width="74" height="23">
-    </a>
+    <div class="page-header__logo-wrapper">
+      <a class="page-header__logo">
+        <img src="img/pink.svg" alt="Барбершоп 'Бородинский'" width="74" height="23">
+      </a>
+    </div>
     <nav class="main-nav">
       <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+          <li class="site-list__item">
+            <a class="site-list__link"><span class="site-list__link-text">Главная</span></a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="site-list__link" href="photo.html"><span class="site-list__link-text">Фотографии</span></a>
           </li>
           <li class="site-list__item">
-            <a href="contest.html">Конкурс</a>
+            <a class="site-list__link" href="contest.html"><span class="site-list__link-text">Конкурс</span></a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/">HTML ACADEMY</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/"><span class="site-list__link-text">HTML ACADEMY</span></a>
           </li>
         </ul>
     </nav>
@@ -38,7 +40,7 @@
     </div>
 
     <section class="form">
-      <p class="form-text">Поделитесь своей историей и получитешанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      <p class="form-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       <form action="/echo" class="form__main">
 
         <fieldset class="form__name">
@@ -60,27 +62,27 @@
           <legend class="form__achievements-legend">Ваши безбашенные достижения в путешествии</legend>
           <div class="form__achievements-container">
             <div class="form__achievements-wrapper">
-              <input class="form__achievements-input" id="shark-selfie" type="checkbox" name="shark-selfie" checked>
+              <input class="form__achievements-input visually-hidden" id="shark-selfie" type="checkbox" name="shark-selfie" checked>
               <label class="form__achievements-label" for="shark-selfie">Сделал селфи с акулой</label>
             </div>
             <div class="form__achievements-wrapper">
-              <input class="form__achievements-input" id="burn-beach" type="checkbox" name="burn-beach" checked>
+              <input class="form__achievements-input visually-hidden" id="burn-beach" type="checkbox" name="burn-beach" checked>
               <label class="form__achievements-label" for="burn-beach">Обгорел на пляже</label>
             </div>
             <div class="form__achievements-wrapper">
-              <input class="form__achievements-input" id="chuck-noris" type="checkbox" name="chuck-noris">
+              <input class="form__achievements-input visually-hidden" id="chuck-noris" type="checkbox" name="chuck-noris">
               <label class="form__achievements-label" for="chuck-noris">Видел Чака Норриса</label>
             </div>
             <div class="form__achievements-wrapper">
-              <input class="form__achievements-input" id="buy-souvenir" type="checkbox" name="buy-souvenir">
+              <input class="form__achievements-input visually-hidden" id="buy-souvenir" type="checkbox" name="buy-souvenir">
               <label class="form__achievements-label" for="buy-souvenir">Накупил сувениров</label>
             </div>
             <div class="form__achievements-wrapper">
-              <input class="form__achievements-input" id="hold-tower" type="checkbox" name="hold-tower" checked>
+              <input class="form__achievements-input visually-hidden" id="hold-tower" type="checkbox" name="hold-tower" checked>
               <label class="form__achievements-label" for="hold-tower">Удержал башню</label>
             </div>
             <div class="form__achievements-wrapper">
-              <input class="form__achievements-input" id="smash-hotel" type="checkbox" name="smash-hotel">
+              <input class="form__achievements-input visually-hidden" id="smash-hotel" type="checkbox" name="smash-hotel">
               <label class="form__achievements-label" for="smash-hotel">Разгромил отель</label>
             </div>
           </div>
@@ -100,15 +102,15 @@
         <fieldset class="form__app">
           <legend class="form__app-legend">С каким приложением вы путешествовали?</legend>
           <div class="form__app-wrapper">
-            <input class="form__app-input" id="ios" type="radio" name="device" checked>
+            <input class="form__app-input visually-hidden" id="ios" type="radio" name="device" checked>
             <label class="form__app-label" for="ios">Pink для iOS</label>
           </div>
           <div class="form__app-wrapper">
-            <input class="form__app-input" id="android" type="radio" name="device">
+            <input class="form__app-input visually-hidden" id="android" type="radio" name="device">
             <label class="form__app-label" for="android">Pink на Android</label>
           </div>
           <div class="form__app-wrapper">
-            <input class="form__app-input" id="windows" type="radio" name="device">
+            <input class="form__app-input visually-hidden" id="windows" type="radio" name="device">
             <label class="form__app-label" for="windows">Windows Phone</label>
           </div>
         </fieldset>
@@ -119,7 +121,7 @@
         </fieldset>
 
         <button class="form__submit-button">Отправить форму</button>
-        <p class="form__reminder">* — обязательные поля</p>
+        <p class="form__reminder"><span class="form__star-symbol">*</span> — обязательные поля</p>
 
       </form>
     </section>
@@ -127,23 +129,34 @@
   </main>
 
   <footer class="footer">
+    <div class="footer__logo-wrapper">
+      <img class="footer__logo-glasses" src="img/glasses.svg">
+      <img class="footer__logo-PINK" src="img/pink (1).svg">
+    </div>
     <div class="footer__wrapper">
-      <h2 class="footer-heading">PINK</h2>
       <ul class="footer__social-list social">
         <li class="footer__social-list-item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">
+            <img class="footer__social-logo" src="img/twitter.svg" alt="Мы в Твиттере">
+          </a>
         </li>
         <li class="footer__social-list-item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+            <img class="footer__social-logo" src="img/facebook.svg" alt="Мы в Фейсбуке">
+          </a>
         </li>
         <li class="footer__social-list-item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <img class="footer__social-logo" src="img/youtube.svg" alt="Мы на YouTube">
+          </a>
         </li>
       </ul>
     </div>
     <div class="footer__copyright copyright">
       <b class="copyright__text">Разработано:</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="footer__copyright-logo" src="img/htmlacademy.svg" alt="HTML ACADEMY" width="27" height="34">
+      </a>
     </div>
   </footer>
 
