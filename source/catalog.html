@@ -8,25 +8,27 @@
 </head>
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="img/pink.svg" alt="Барбершоп 'Бородинский'" width="74" height="23">
-    </a>
+    <div class="page-header__logo-wrapper">
+      <a class="page-header__logo">
+        <img src="img/pink.svg" alt="Барбершоп 'Бородинский'" width="74" height="23">
+      </a>
+    </div>
     <nav class="main-nav">
       <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+            <a class="site-list__link"><span class="site-list__link-text">Главная</span></a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="site-list__link" href="photo.html"><span class="site-list__link-text">Фотографии</span></a>
           </li>
           <li class="site-list__item">
-            <a href="contest.html">Конкурс</a>
+            <a class="site-list__link" href="contest.html"><span class="site-list__link-text">Конкурс</span></a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/">HTML ACADEMY</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/"><span class="site-list__link-text">HTML ACADEMY</span></a>
           </li>
         </ul>
     </nav>
@@ -127,8 +129,8 @@
           <button class="editor__button-cut"><span class="visually-hidden">Контраст</span></button>
           <div class="editor__scroll-bar"></div>
         </div>
-        <button class="editor__post">Запостить</button>
-        <button class="editor__cancel" disabled>Отмена</button>
+        <button class="editor__button editor__button--post">Запостить</button>
+        <button class="editor__button editor__button--cancel" disabled>Отмена</button>
       </div>
 
     </section>
@@ -136,23 +138,34 @@
   </main>
 
   <footer class="footer">
+    <div class="footer__logo-wrapper">
+      <img class="footer__logo-glasses" src="img/glasses.svg">
+      <img class="footer__logo-PINK" src="img/pink (1).svg">
+    </div>
     <div class="footer__wrapper">
-      <h2 class="footer-heading">PINK</h2>
       <ul class="footer__social-list social">
         <li class="footer__social-list-item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">
+            <img class="footer__social-logo" src="img/twitter.svg" alt="Мы в Твиттере">
+          </a>
         </li>
         <li class="footer__social-list-item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+            <img class="footer__social-logo" src="img/facebook.svg" alt="Мы в Фейсбуке">
+          </a>
         </li>
         <li class="footer__social-list-item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <img class="footer__social-logo" src="img/youtube.svg" alt="Мы на YouTube">
+          </a>
         </li>
       </ul>
     </div>
     <div class="footer__copyright copyright">
       <b class="copyright__text">Разработано:</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="footer__copyright-logo" src="img/htmlacademy.svg" alt="HTML ACADEMY" width="27" height="34">
+      </a>
     </div>
   </footer>
 
