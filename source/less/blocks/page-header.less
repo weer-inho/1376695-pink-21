@@ -2,9 +2,56 @@
   font-family: "Open Sans Bold", "Arial", sans-serif;
   background-color: @deepblue;
   color: @white;
-  padding: 23px 0 0;
+  background-image: url("../../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    min-height: 110px;
+    background-image:
+      url("../../img/phone-tablet.png"),
+      url("../../img/back-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: 95px 412px, center;
+    background-size: 660px 545px, cover;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 853px;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image:
+      url("../../img/phone-desktop.png"),
+      url("../../img/back-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: 202px 188px, center;
+    background-size: 1050px 645px, cover;
+  }
 }
 
 .page-header__logo-wrapper {
   margin-left: 20px;
+  min-height: 45px;
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+    padding-top: 30px;
+  }
+}
+
+.page-header__container {
+  background-color: @deepblue;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 350px 850px;
+    min-height: 110px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }

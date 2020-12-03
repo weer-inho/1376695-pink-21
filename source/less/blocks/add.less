@@ -1,13 +1,44 @@
+.add {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    display: grid;
+    grid-template-rows: 287px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .add__wrapper {
   min-height: 395px;
   padding-top: 20px;
   background-image:
     url("../../img/screen.jpg"),
-    url("../../img/phone.png"),
-    url("../../img/back-mobile.jpg");
+    url("../../img/phone.png");
   background-repeat: no-repeat;
-  background-position: center 141px, center bottom, center;
-  background-size: 111px 197px, 320px 286px, cover;
+  background-position: center 141px, center bottom;
+  background-size: 111px 197px, 320px 286px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    grid-row-start: 1;
+    grid-row-end: -1;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    background-image: url("../../img/screen.jpg");
+    background-repeat: no-repeat;
+    background-position: 90px 147px;
+    background-size: 195px 346px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 2;
+    background-position: 173px 143px;
+    background-size: 230px 408px;
+  }
 }
 
 .add__text {
@@ -17,6 +48,11 @@
   width: 280px;
   margin: 0 auto 0;
   text-align: center;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    font-size: 40px;
+    margin: auto auto 0;
+  }
 }
 
 .add__access {
@@ -24,6 +60,14 @@
   min-height: 320px;
   padding: 40px 20px 0;
   text-align: center;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    background-color: transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+  }
 }
 
 .add__download {
@@ -35,6 +79,10 @@
   color: @white;
   border-radius: 30px;
   border: 3px solid @white;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    background-color: transparent;
+  }
 }
 
 .add__icons {

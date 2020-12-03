@@ -1,1 +1,99 @@
 // здесь будут стили
+.effect {
+  display: none;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    display: grid;
+    grid-template-rows: 161px 130px 50px;
+    grid-template-columns: 1fr 1fr;
+    background-image: url("../../img/Group 1.svg");
+    background-size: 60% 82%;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-rows: 161px 130px 50px;
+    grid-template-columns: 1fr 1fr;
+    background-image: url("../../img/Group 1.svg");
+    background-size: 238px 276px;
+    background-position: 30% 80%;
+    background-repeat: no-repeat;
+    background-color: #f5f5f5;
+  }
+}
+
+.effect__heading,
+.effect__description,
+.effect__link {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: -1;
+  }
+}
+
+.effect__heading {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    .osbold();
+    font-size: 30px;
+    font-weight: 900;
+    max-width: 168px;
+    line-height: 36px;
+    margin-top: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    .osbold();
+    font-size: 30px;
+    font-weight: 900;
+    max-width: 100%;
+    line-height: 36px;
+    margin-top: auto;
+  }
+}
+
+.effect__description {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    .os();
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 310px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    .os();
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 100%;
+  }
+}
+
+.effect__link {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    .os();
+    font-size: 14px;
+    color: @deepred;
+    text-decoration: underline;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    .os();
+    font-size: 18px;
+    color: @deepred;
+    text-decoration: underline;
+  }
+}

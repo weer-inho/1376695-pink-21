@@ -3,6 +3,15 @@
   text-align: center;
   min-height: 280px;
   background-color: #e5e5e5;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    padding: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 30px;
+    min-height: 330px;
+  }
 }
 
 .rates__table-row-subscription {
@@ -15,19 +24,51 @@
 .rates__table {
   margin: 0 auto 0 auto;
   padding: 0;
-  max-width: 100%;
+  width: 100%;
   border-spacing: 0;
-}
 
-.rates__table-money {
-  .oslight();
-  font-size: 18px;
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 616px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
 }
 
 .rates__first-column {
   background-color: @white;
   .oslight();
   font-size: 14px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 153px;
+    height: 45px;
+    .oslight();
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 234px;
+    height: 59px;
+    .oslight();
+  }
+}
+
+.rates__base-column,
+.rates__standart-column,
+.rates__unlim-column {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 153px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 239px;
+  }
+}
+
+.rates__table-money {
+  .oslight();
+  font-size: 18px;
 }
 
 .rates__table-subscription-cell,

@@ -1,8 +1,32 @@
 .footer {
+  display: grid;
   text-align: center;
+  min-height: 320px;
+  padding-top: 40px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 127px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 127px;
+  }
 }
 
 .footer__logo-wrapper {
   width: 145px;
   height: 40px;
+  margin: auto;
+}
+
+.footer__social-list {
+  display: flex;
+  width: 172px;
+  justify-content: space-between;
+}
+
+.footer__wrapper {
+  margin: auto;
 }
