@@ -18,13 +18,15 @@ input[type="radio"].visually-hidden {
   src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Open Sans Bold";
   src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -32,7 +34,10 @@ input[type="radio"].visually-hidden {
   src: url("../fonts/opensanslight.woff") format("woff"), url("../fonts/opensanslight.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
+
+// colors
 
 @deepblue: #283645;
 @white: #ffffff;
@@ -40,6 +45,14 @@ input[type="radio"].visually-hidden {
 @deepred: #D22856;
 @green: #2AAB6D;
 @deepbluelight: rgba(40, 54, 69, 0.1);
+
+// viewports
+
+@tablet-width: 768px;
+@desktop-width: 1200px;
+@mobile-width-only: 767px;
+
+// fonts
 
 .os() {
   font-family: "Open Sans", "Arial", serif;
@@ -55,4 +68,9 @@ input[type="radio"].visually-hidden {
 
 * {
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

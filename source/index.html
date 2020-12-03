@@ -2,44 +2,44 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__logo-wrapper">
-        <a class="page-header__logo">
-          <img src="img/pink.svg" alt="Барбершоп 'Бородинский'" width="74" height="23">
-        </a>
+      <div class="page-header__container">
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo">
+            <img src="img/pink.svg" alt="Барбершоп 'Бородинский'" width="74" height="23">
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link"><span class="site-list__link-text">Главная</span></a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="photo.html"><span class="site-list__link-text">Фотографии</span></a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="contest.html"><span class="site-list__link-text">Конкурс</span></a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="https://htmlacademy.ru/"><span class="site-list__link-text">HTML ACADEMY</span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link"><span class="site-list__link-text">Главная</span></a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html"><span class="site-list__link-text">Фотографии</span></a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="contest.html"><span class="site-list__link-text">Конкурс</span></a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/"><span class="site-list__link-text">HTML ACADEMY</span></a>
-            </li>
-          </ul>
-      </nav>
-    </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">Пинк.</h1>
 
       <section class="add">
         <h2 class="visually-hidden">Скачайте приложение</h2>
+        <p class="add__text">Взгляните на жизнь иначе!</p>
         <div class="add__wrapper">
-          <p class="add__text">Взгляните на жизнь иначе!</p>
         </div>
         <div class="add__access">
           <button class="add__download">Скачать приложение</button>
@@ -47,6 +47,10 @@
           <p class="add__available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Пинк.</h1>
 
       <section class="general">
         <h2 class="visually-hidden">Устали от серости мегаполиса?</h2>
@@ -70,7 +74,7 @@
             </li>
           </ul>
         </div>
-        <div class="effect visually-hidden">
+        <div class="effect">
           <h2 class="effect__heading">Эффект на 24 часа!</h2>
           <p class="effect__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
           <a class="effect__link" href="#">Узнать больше об исследовании</a>
@@ -92,6 +96,7 @@
             <li class="reviews__list-item slider__item">
               <h3 class="reviews__name">Петр Николаев</h3>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <p class="reviews__details">25 лет, водитель трамвая</p>
             </li>
           </ul>
           <div class="switcher switcher--reviews">
@@ -169,20 +174,18 @@
           Остались вопросы?<br>
           Свяжитесь с нами!
         </h2>
-        <ul class="info__list">
-          <li class="info__list-item info__list-item--call">
-            <h3 class="info__list-item-title">Звоните:</h3>
-            <p class="info__list-item-text">+7 (812) 555-66-66</p>
-          </li>
-          <li class="info__list-item info__list-item--call">
-            <h3 class="info__list-item-title">Пишите:</h3>
-            <p class="info__list-item-text">mail@htmlacademy.ru</p>
-          </li>
-          <li class="info__list-item info__list-item--call">
-            <h3 class="info__list-item-title">Приезжйате в гости:</h3>
-            <p class="info__list-item-text">ул. Большая Конюшенная, 19/8</p>
-          </li>
-        </ul>
+          <div class="info__call">
+            <h3 class="info__call-title">Звоните:</h3>
+            <p class="info__call-text">+7 (812) 555-66-66</p>
+          </div>
+          <div class="info__email">
+            <h3 class="info__email-title">Пишите:</h3>
+            <p class="info__email-text">mail@htmlacademy.ru</p>
+          </div>
+          <div class="info__guest">
+            <h3 class="info__guest-title">Приезжйате в гости:</h3>
+            <p class="info__guest-text">ул. Большая Конюшенная, 19/8</p>
+          </div>
       </section>
 
       <section class="map">
