@@ -41,6 +41,7 @@
 
 .form-text__please {
   display: none;
+
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     display: inline;
   }
@@ -72,20 +73,37 @@
 }
 
 .form__contacts {
+  padding-top: 42px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    order: 3;
+    padding-top: 30px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
   @media (min-width: @desktop-width) {
+    order: 3;
     display: flex;
   }
 }
 
 .form__emotion {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    height: 289px;
+    text-align: center;
+    padding-top: 30px;
+    grid-column-start: 1;
+    grid-column-end: -1;
     order: 4;
   }
 
   @media (min-width: @desktop-width) {
+    height: 260px;
     order: 4;
   }
 }
+
 
 .form__name {
   display: grid;
@@ -298,21 +316,6 @@
   transition: 1s;
 }
 
-.form__contacts {
-  padding-top: 42px;
-
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    order: 3;
-    padding-top: 30px;
-    grid-column-start: 1;
-    grid-column-end: -1;
-  }
-
-  @media (min-width: @desktop-width) {
-    order: 3;
-  }
-}
-
 .form__contacts-legend {
   display: none;
 
@@ -394,20 +397,6 @@
   height: 15px;
   background-color: @deepred;
   border-radius: 50%;
-}
-
-.form__emotion {
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    height: 289px;
-    text-align: center;
-    padding-top: 30px;
-    grid-column-start: 1;
-    grid-column-end: -1;
-  }
-
-  @media (min-width: @desktop-width) {
-    height: 260px;
-  }
 }
 
 .form__emotion-text {
