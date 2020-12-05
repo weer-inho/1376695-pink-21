@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    min-height: 271px;
+  }
 }
 
 .form-contest__text {
@@ -14,4 +18,14 @@
   width: 280px;
   margin: 0 auto 0;
   text-align: center;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    font-size: 50px;
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    width: 747px;
+  }
 }
