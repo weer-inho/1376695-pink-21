@@ -3,6 +3,9 @@
 }
 
 .form__main {
+  max-width: 310px;
+  margin: auto;
+
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     display: grid;
     grid-template-columns: 326px 327px;
@@ -85,6 +88,8 @@
   @media (min-width: @desktop-width) {
     order: 3;
     display: flex;
+    grid-column-start: 1;
+    grid-column-end: -1;
   }
 }
 
@@ -101,6 +106,8 @@
   @media (min-width: @desktop-width) {
     height: 260px;
     order: 4;
+    grid-column-start: 1;
+    grid-column-end: -1;
   }
 }
 
@@ -121,7 +128,6 @@
     grid-column-end: 2;
     width: 336px;
     min-height: 336px;
-    grid-gap: 58px;
   }
 }
 
@@ -238,6 +244,9 @@
 
   @media (min-width: @desktop-width) {
     order: 4;
+    min-height: 200px;
+    grid-column-start: 1;
+    grid-column-end: -1;
   }
 }
 
