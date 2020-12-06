@@ -7,40 +7,44 @@
   <title>HTML Academy: Пинк Каталог</title>
 </head>
 <body class="page__body">
-  <header class="page-header">
-    <div class="page-header__logo-wrapper">
-      <a class="page-header__logo">
-        <img src="img/pink.svg" alt="Барбершоп 'Бородинский'" width="74" height="23">
-      </a>
+  <header class="page-header page-header--small">
+    <div class="page-header__container">
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo">
+          <img src="img/pink.svg" alt="Барбершоп 'Бородинский'" width="74" height="23">
+        </a>
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link"><span class="site-list__link-text">Главная</span></a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html"><span class="site-list__link-text">Фотографии</span></a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="contest.html"><span class="site-list__link-text">Конкурс</span></a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/"><span class="site-list__link-text">HTML ACADEMY</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <nav class="main-nav">
-      <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link"><span class="site-list__link-text">Главная</span></a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html"><span class="site-list__link-text">Фотографии</span></a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="contest.html"><span class="site-list__link-text">Конкурс</span></a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/"><span class="site-list__link-text">HTML ACADEMY</span></a>
-          </li>
-        </ul>
-    </nav>
+
+    <div class="photo__title-wrapper">
+      <h1 class="photo__title">Фотографии пользователей</h1>
+    </div>
   </header>
 
   <main class="page-main">
 
     <section class="photo">
 
-      <div class="photo__title-wrapper">
-        <h1 class="photo__title">Фотографии пользователей</h1>
-      </div>
       <div class="photo__text-wrapper">
         <p class="photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
@@ -121,16 +125,18 @@
 
     <section class="editor">
 
-      <div class="editor__wrapper">
+      <div class="editor__container">
+        <img class="editor__img" width="280" height="374" src="img/photo-7-tablet.jpg" alt="Зимняя дорога">
         <div class="editor__window">
-          <img class="editor__img" width="280" height="374" src="img/photo-7-tablet.jpg" alt="Зимняя дорога">
           <button class="editor__button-cut"><span class="visually-hidden">Обрезать</span></button>
           <button class="editor__button-cut"><span class="visually-hidden">Залить</span></button>
           <button class="editor__button-cut"><span class="visually-hidden">Контраст</span></button>
           <div class="editor__scroll-bar"></div>
         </div>
-        <button class="editor__button editor__button--post">Запостить</button>
-        <button class="editor__button editor__button--cancel" disabled>Отмена</button>
+        <div class="editor__button-container">
+          <button class="editor__button editor__button--post">Запостить</button>
+          <button class="editor__button editor__button--cancel" disabled>Отмена</button>
+        </div>
       </div>
 
     </section>
