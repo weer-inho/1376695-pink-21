@@ -7,40 +7,46 @@
   <title>HTML Academy: Пинк Форма</title>
 </head>
 <body class="page__body">
-  <header class="page-header">
-    <div class="page-header__logo-wrapper">
-      <a class="page-header__logo">
-        <img src="img/pink.svg" alt="Барбершоп 'Бородинский'" width="74" height="23">
-      </a>
+    <header class="page-header page-header--small">
+    <div class="page-header__container">
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo">
+          <img src="img/pink.svg" alt="Барбершоп 'Бородинский'" width="74" height="23">
+        </a>
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link"><span class="site-list__link-text">Главная</span></a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html"><span class="site-list__link-text">Фотографии</span></a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="contest.html"><span class="site-list__link-text">Конкурс</span></a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/"><span class="site-list__link-text">HTML ACADEMY</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <nav class="main-nav">
-      <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link"><span class="site-list__link-text">Главная</span></a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html"><span class="site-list__link-text">Фотографии</span></a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="contest.html"><span class="site-list__link-text">Конкурс</span></a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/"><span class="site-list__link-text">HTML ACADEMY</span></a>
-          </li>
-        </ul>
-    </nav>
-  </header>
 
-  <main class="page-main">
     <div class="form-contest">
       <p class="form-contest__text">Конкурс на самое безбашенное путешествие с Пинк</p>
     </div>
+    </header>
+
+  <main class="page-main">
 
     <section class="form">
-      <p class="form-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      <p class="form-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        <span class="form-text__please">Пожалуйста, заполните форму ниже:</span>
+      </p>
       <form action="/echo" class="form__main">
 
         <fieldset class="form__name">
@@ -61,7 +67,7 @@
         <div class="form__achievments-container">
           <fieldset class="form__achievements">
             <legend class="form__achievements-legend">Ваши безбашенные достижения в путешествии</legend>
-            <div class="form__achievements-container">
+            <div class="form__achievements-container-small">
               <div class="form__achievements-wrapper">
                 <input class="form__achievements-input visually-hidden" id="shark-selfie" type="checkbox" name="shark-selfie" checked>
                 <label class="form__achievements-label" for="shark-selfie">Сделал селфи с акулой</label>
@@ -91,6 +97,7 @@
         </div>
 
         <fieldset class="form__contacts">
+          <legend class="form__contacts-legend">Контактная информация</legend>
           <div class="form__contacts-wrapper">
             <label class="form-contacts-label" for="phone">Номер телефона</label>
             <input class="form__contacts-input" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста" pattern="[0-9]{1}-[0-9]{3}-[0-9]{7}">
