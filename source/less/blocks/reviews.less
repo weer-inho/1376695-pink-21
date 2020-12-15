@@ -2,12 +2,14 @@
   padding-top: 42px;
   padding-bottom: 31px;
 }
-@media (min-width:700px) {
+
+@media (min-width: 700px) {
   .reviews {
     padding-top: 1px;
   }
 }
-@media (min-width:1200px) {
+
+@media (min-width: 1200px) {
   .reviews {
     padding-bottom: 14px;
   }
@@ -17,17 +19,19 @@
   width: 280px;
   margin: 0 auto;
 }
-@media (min-width:700px) {
+
+@media (min-width: 700px) {
   .reviews__wrapper {
     width: 620px;
   }
 }
-@media (min-width:1200px) {
+
+@media (min-width: 1200px) {
   .reviews__wrapper {
     width: 940px;
     padding-top: 105px;
     padding-bottom: 8px;
-    background-image: url(../img/icon-quotes.svg);
+    background-image: url("../img/icon-quotes.svg");
     background-size: 80px 63px;
     background-repeat: no-repeat;
     background-position: 50% 5px;
@@ -39,44 +43,50 @@
   min-height: 290px;
   overflow: hidden;
 }
-@media (min-width:1200px) {
+
+@media (min-width: 1200px) {
   .reviews__items {
     position: relative;
   }
 }
 
-.reviews__intro,.reviews__switcher {
+.reviews__intro,
+.reviews__switcher {
   display: none;
 }
 
-.reviews #reviews-radio-1:checked~.reviews__item--review-peter,
-.reviews #reviews-radio-2:checked~.reviews__item--review-vasya,
-.reviews #reviews-radio-3:checked~.reviews__item--review-kolya {
+.reviews .reviews__switcher:nth-child(1):checked ~ .reviews__item--review-peter,
+.reviews .reviews__switcher:nth-child(2):checked ~ .reviews__item--review-vasya,
+.reviews .reviews__switcher:nth-child(3):checked ~ .reviews__item--review-kolya {
   position: static;
   padding-bottom: 30px;
   visibility: visible;
   opacity: 1;
 }
 
-.reviews #reviews-radio-1:checked~.reviews__nav label[for=reviews-radio-1],
-.reviews #reviews-radio-2:checked~.reviews__nav label[for=reviews-radio-2],
-.reviews #reviews-radio-3:checked~.reviews__nav label[for=reviews-radio-3] {
-  background-color: #fff;
+.reviews .reviews__switcher:nth-child(1):checked ~ .reviews__nav label[for="reviews-radio-1"],
+.reviews .reviews__switcher:nth-child(2):checked ~ .reviews__nav label[for="reviews-radio-2"],
+.reviews .reviews__switcher:nth-child(3):checked ~ .reviews__nav label[for="reviews-radio-3"] {
+  background-color: #ffffff;
   border: 3px solid #283645;
   width: 12px;
   height: 12px;
 }
 
-@media (min-width:700px) {
-  .reviews #reviews-radio-1:checked~.reviews__item--review-peter,.reviews #reviews-radio-2:checked~.reviews__item--review-vasya,.reviews #reviews-radio-3:checked~.reviews__item--review-kolya {
+@media (min-width: 700px) {
+  .reviews .reviews__switcher:nth-child(1):checked ~ .reviews__item--review-peter,
+  .reviews .reviews__switcher:nth-child(2):checked ~ .reviews__item--review-vasya,
+  .reviews .reviews__switcher:nth-child(3):checked ~ .reviews__item--review-kolya {
     display: flex;
     flex-direction: column;
     visibility: visible;
     opacity: 1;
   }
 
-  .reviews #reviews-radio-1:checked~.reviews__nav label[for=reviews-radio-1],.reviews #reviews-radio-2:checked~.reviews__nav label[for=reviews-radio-2],.reviews #reviews-radio-3:checked~.reviews__nav label[for=reviews-radio-3] {
-    background-color: #fff;
+  .reviews .reviews__switcher:nth-child(1):checked ~ .reviews__nav label[for="reviews-radio-1"],
+  .reviews .reviews__switcher:nth-child(2):checked ~ .reviews__nav label[for="reviews-radio-2"],
+  .reviews .reviews__switcher:nth-child(3):checked ~ .reviews__nav label[for="reviews-radio-3"] {
+    background-color: #ffffff;
     border: 3px solid #283645;
   }
 }
@@ -89,9 +99,11 @@
   visibility: hidden;
   opacity: 0;
   transition-property: opacity;
-  transition: .2s ease-out;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
 }
-@media (min-width:700px) {
+
+@media (min-width: 700px) {
   .reviews__item {
     text-align: center;
     visibility: hidden;
@@ -99,7 +111,7 @@
   }
 }
 
-@media (min-width:700px) {
+@media (min-width: 700px) {
   .reviews__inner-wrapper {
     order: 1;
   }
@@ -113,21 +125,22 @@
 .reviews__item .reviews__title:first-of-type {
   margin-top: 2px;
 }
-.reviews__content,.reviews__title {
-  margin-bottom: 13px;
-}
-@media (min-width:700px) {
+
+@media (min-width: 700px) {
   .reviews__item .reviews__title:first-of-type {
     margin-top: 22px;
   }
+
   .reviews__title {
     margin-bottom: 0;
   }
 }
-@media (min-width:1200px) {
+
+@media (min-width: 1200px) {
   .reviews__item:first-of-type .reviews__title:first-of-type {
     margin-top: 23px;
   }
+
   .reviews__title {
     margin-bottom: 0;
     font-size: 24px;
@@ -135,10 +148,7 @@
   }
 }
 
-.reviews__intro,.reviews__switcher {
-  display: none;
-}
-@media (min-width:700px) {
+@media (min-width: 700px) {
   .reviews__intro {
     display: block;
     margin-top: 2px;
@@ -147,32 +157,35 @@
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
   .reviews__intro {
     display: block;
     margin-top: 0;
     font-size: 18px;
     line-height: 34px;
   }
-
 }
 
-.reviews__content,.reviews__title {
+.reviews__content,
+.reviews__title {
   margin-bottom: 13px;
 }
+
 .reviews__content {
   .os();
   font-size: 14px;
   line-height: 30px;
   margin-top: 16px;
 }
-@media (min-width:700px) {
+
+@media (min-width: 700px) {
   .reviews__content {
     font-size: 18px;
     order: 0;
   }
 }
-@media (min-width:1200px) {
+
+@media (min-width: 1200px) {
   .reviews__content {
     padding: 0 95px;
   }
@@ -181,13 +194,16 @@
 .reviews__toggle {
   display: none;
 }
+
 .reviews__toggle .arrow:hover {
   fill: #7e868f;
 }
+
 .reviews__toggle:active .arrow {
-  opacity: .1;
+  opacity: 0.1;
 }
-@media (min-width:1200px) {
+
+@media (min-width: 1200px) {
   .reviews__toggle {
     display: block;
     position: absolute;
@@ -205,6 +221,7 @@
     cursor: pointer;
     z-index: 1;
   }
+
   .reviews__toggle--prev {
     left: 0;
   }
@@ -217,7 +234,8 @@
 .reviews__toggle--prev .arrow {
   left: 0;
 }
-@media (min-width:1200px) {
+
+@media (min-width: 1200px) {
   .reviews__toggle--prev {
     left: 0;
   }
@@ -226,7 +244,8 @@
 .reviews__toggle--next .arrow {
   right: 0;
 }
-@media (min-width:1200px) {
+
+@media (min-width: 1200px) {
   .reviews__toggle--next {
     right: 0;
   }
