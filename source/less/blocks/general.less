@@ -1,6 +1,6 @@
 .general__text-wrapper {
-  min-height: 320px;
-  padding: 46px 0 0;
+  min-height: 251px;
+  padding: 42px 0 0;
   text-align: center;
 }
 
@@ -8,7 +8,8 @@
   .oslight();
   color: @black;
   font-size: 24px;
-  margin: 0 auto 40px auto;
+  line-height: 120%;
+  margin: 0 auto 31px auto;
   width: 280px;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
@@ -25,14 +26,14 @@
 
 .general__list-wrapper {
   background-color: #f2f2f2;
-  min-height: 800px;
-  padding: 60px 20px 0;
+  min-height: 751px;
+  padding: 29px 20px 0;
   text-align: center;
   background-image:
     url("../../img/iphone screen-3.jpg"),
     url("../../img/iphone 3.png");
   background-repeat: no-repeat;
-  background-position: center bottom, center 513px;
+  background-position: center 509px, center 474px;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     min-height: 500px;
@@ -46,8 +47,10 @@
 }
 
 .general__list {
+  display: grid;
+  grid-gap: 30px;
   margin: 0 auto 0 auto;
-  padding: 0;
+  padding: 18px 0 0 0;
   list-style: none;
   width: 280px;
 
@@ -60,9 +63,12 @@
 .general__list-item-title {
   .osbold();
   font-size: 18px;
+  margin: 0 0 13px 0;
 }
 
 .general__list-item-text {
   .os();
   font-size: 14px;
+  line-height: 24px;
+  margin: 0 0 0 0;
 }

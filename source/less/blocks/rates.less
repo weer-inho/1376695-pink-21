@@ -1,91 +1,165 @@
 .rates {
-  position: relative;
-  text-align: center;
-  min-height: 280px;
-  background-color: #e5e5e5;
-
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    padding: 30px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding: 30px;
-    min-height: 330px;
-  }
+    position: relative;
+    min-height: 461px;
+    background-color: #e5e5e5;
+    padding: 82px 0 0;
 }
 
-.rates__table-row-subscription {
-  background-color: @deepblue;
-  color: @white;
+.rates__wrapper {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+
+@media (max-width:699px) {
+.rates__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+}
+
+.rates__switcher {
+    display: none;
+}
+
+@media (max-width:699px) {
+    #rates-radio-1:checked~.rates__list {
+        transform: translateX(280px);
+        transition: .5s;
+    }
+
+    #rates-radio-2:checked~.rates__list {
+        transform: translateX(0);
+        transition: .5s;
+    }
+
+    #rates-radio-3:checked~.rates__list {
+        transform: translateX(-280px);
+        transition: .5s;
+    }
+
+    #rates-radio-1:checked~.rates__nav label[for=rates-radio-1],
+    #rates-radio-2:checked~.rates__nav label[for=rates-radio-2],
+    #rates-radio-3:checked~.rates__nav label[for=rates-radio-3] {
+      background-color: #fff;
+      border: 3px solid #283645;
+      width: 12px;
+      height: 12px;
+    }
+}
+
+.rates__list {
+    width: 840px;
+    box-sizing: border-box;
+    // transform: translateX(-280px);
+    border-collapse: collapse;
+}
+@media (min-width:700px) {
+    .rates__list {
+        transform: none;
+        width: 620px;
+    }
+}
+@media (min-width:1200px) {
+    .rates__list {
+        min-width: 940px;
+    }
+}
+
+.rates__list-head {
+    color: #fff;
+    background-color: #283645;
+    height: 90px;
+}
+
+.rates__value {
+  position: relative;
+  height: 98px;
+  padding: 6px 0 21px 0;
   .osbold();
   text-transform: uppercase;
+  border-left: 2px solid @white;
 }
 
-.rates__table {
-  margin: 0 auto 0 auto;
-  padding: 0;
-  width: 100%;
-  border-spacing: 0;
-
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    width: 616px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 940px;
-  }
-}
-
-.rates__first-column {
-  background-color: @white;
-  .oslight();
+.rates__value--flag::before {
+  position: absolute;
+  display: block;
+  content: "хит";
+  height: 10px;
+  width: 28px;
+  top: 20px;
+  left: 9px;
+  .os();
   font-size: 14px;
-
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    width: 153px;
-    height: 45px;
-    .oslight();
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 234px;
-    height: 59px;
-    .oslight();
-  }
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #d22856;
+  transform: rotate(-45deg);
+  z-index: 10;
 }
 
-.rates__base-column,
-.rates__standart-column,
-.rates__unlim-column {
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    width: 153px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 239px;
-  }
+.rates__hit {
+  position: absolute;
+  display: none;
 }
 
-.rates__table-money {
+.rates__value--flag .rates__hit {
+  display: block;
+  top: 0;
+  left: -2px;
+}
+
+.rates__value p {
   .oslight();
+  margin: 2px 0 0 0;
   font-size: 18px;
 }
 
-.rates__table-subscription-cell,
-.rates__table-filter-cell,
-.rates__table-smiles-cell,
-.rates__table-coments-cell {
+.rates__field {
+  position: relative;
   background-color: @white;
-  border: 1px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
+  border-top: none;
+  .os();
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 60px;
+  padding: 0 0 0 19px;
 }
 
-thead .rates__table-subscription-cell,
-thead .rates__table-filter-cell,
-thead .rates__table-smiles-cell,
-thead .rates__table-coments-cell {
-  background-color: @deepblue;
+@media (max-width:699px) {
+    .rates__field--empty {
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        line-height: 0;
+        background-color: transparent;
+        border: none;
+    }
 }
 
-.rates__table-row-subscription .rates__table-subscription-cell.rates__first-column {
-  background-color: #e5e5e5;
+@media (min-width:700px) {
+    .rates__field--cancel,.rates__field--none,.rates__field--ok {
+        font-size: 0;
+        line-height: 0;
+    }
+}
+
+.icon-yes,
+.icon-no {
+  position: absolute;
+  top: 19px;
+  right: 20px;
+}
+
+#icon-yes path {
+  fill: #3dc644;
+}
+
+#icon-no path {
+  fill: #f25b26;
 }

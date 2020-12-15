@@ -1,16 +1,20 @@
 .footer {
   display: grid;
+  grid-template-rows: 67px 73px 54px;
   text-align: center;
   min-height: 320px;
   padding-top: 40px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     min-height: 127px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     min-height: 127px;
   }
 }
@@ -18,15 +22,24 @@
 .footer__logo-wrapper {
   width: 145px;
   height: 40px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .footer__social-list {
   display: flex;
-  width: 172px;
+  width: 178px;
   justify-content: space-between;
 }
 
 .footer__wrapper {
   margin: auto;
+}
+
+.footer__copyright {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 40px 0 0 0;
 }

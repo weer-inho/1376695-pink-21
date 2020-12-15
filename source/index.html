@@ -7,6 +7,25 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
+
+    <svg version="1.1" style="display: none">
+      <symbol viewBox="-82.357 4.875 21.698 16.09" id="icon-yes">
+        <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.09 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+      </symbol>
+      <symbol viewBox="0 0 26.752 26.752" id="icon-no">
+        <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+      </symbol>
+      <symbol viewBox="0 0 21.706 41.719" id="icon-arrow-right">
+        <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+      </symbol>
+      <symbol viewBox="0 0 21.706 41.719" id="icon-arrow-left">
+        <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+      </symbol>
+      <symbol viewBox="0 0 74 73" id="hit_ribbon">
+        <image id="hit_ribbon_img" data-name="hit ribbon" width="74" height="73" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAABJCAMAAACtmkDtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABpFBMVEUAAADSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFYAAAAFTzxhAAAAinRSTlMAATKp9v7NVggdu+ZJG5r04mcMxNE/AqBjNrT9ykoSsfBRJ53z1w0qwNhCCfsFN75B+FkwpPXPWwogvEYWmOdoM8LOBKJhNa/5y1AXtetNItxlL8HVQAOeZkStLNNdJb3dQxGZ7cMGpl6s91S56ZvhZFNi2wfjRQs9YE/a1lfg6mnMX1JL3tLJ1PpSKofHAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAixJREFUWMOt2HtT00AUBfBATYsgLYWSVrYIalvAVgSUh4JQWqnGB+ADjQg+EbUKVsEnoojvfGpnmOGPztB7ztLcD/Cbs5vc3ZsYhlQ1tb4DLlOmP1AnSsbBegpy3YZDMmQ0BkOc1BRulqXaFjJTpBVksqKk5MYAdLhNUY6Kt1sydaSDjNR5FKzu2PEEJyVjKVnq6iYz9ZwAmdLBDCeFwidlqfcUmSnehzL5SKl/AEinzwxy0tDwiCydPUdmahoFmcbOc2eBOz4BMmUnyUw51Hf5C6RkTsmQVbh4iYKUfRm8T1eukpmuTYPVzQTJvpu9Dvruxk0y0605kOn2HVLKOPL5ZPXWk48ufhdkSs2TmQYDQLoXJXd8YRHcLfcfkJkePgKZHj/p56QlJy1LhadkJj/qu+VnpGQ+lyEr+6JIQcr/EkwYja/ITCvtYHXGKjlhvA6nEEVmWkA7zlMlLFGUskdrPKISbwiIopJv4Y6T1BrqO5pKTKx7RNno9KWpzDAtyZQ5NDDiEfXuPQ/JVIPzwSMq91EHEqlPelJFStnTeY+opc+aUEVqo8T1Haa+9GlDFaiio7tPlag4exZAqri5L2kPKrKo9Y4L1FetvpOob1saZ4FIfSfuO45S2/uXyihl/1j2iFr5WQVURv1y9Ptub+o3f7cAyixVKe1S6g/65qQpcsIgqL9TzR5R9IQBqU56wkCUxoQBqH8aE4ZYZm4zXb2yU+Po3yFf6N8hX/8BI352Z6q/2McAAAAASUVORK5CYII="/>
+      </symbol>
+    </svg>
+
     <header class="page-header">
       <div class="page-header__container">
         <div class="page-header__logo-wrapper">
@@ -82,91 +101,93 @@
       </section>
 
       <section class="reviews">
-        <h2 class="visually-hidden">Отзывы</h2>
-        <div class="reviews__wrapper slider">
-          <ul class="reviews__list slider__list">
-            <li class="reviews__list-item slider__item">
-              <h3 class="reviews__name">Николай Петров</h3>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </li>
-            <li class="reviews__list-item slider__item">
-              <h3 class="reviews__name">Василий Смирнов</h3>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </li>
-            <li class="reviews__list-item slider__item">
-              <h3 class="reviews__name">Петр Николаев</h3>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              <p class="reviews__details">25 лет, водитель трамвая</p>
-            </li>
-          </ul>
-          <div class="switcher switcher--reviews">
-            <button class="switcher__toggle switcher__toggle--current"><span class="switcher_number visually-hidden">1</span></button>
-            <button class="switcher__toggle"><span class="switcher_number visually-hidden">2</span></button>
-            <button class="switcher__toggle"><span class="switcher_number visually-hidden">3</span></button>
+        <div class="reviews__wrapper">
+          <div class="reviews__items">
+            <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-1" checked>
+            <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-2">
+            <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-3">
+
+              <article class="reviews__item reviews__item--review-peter">
+                <div class="reviews__inner-wrapper">
+                  <h4 class="reviews__title">Николай Петров</h4>
+                  <p class="reviews__intro">25 лет, водитель трамвая</p>
+                </div>
+                <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </article>
+
+              <article class="reviews__item reviews__item--review-vasya">
+                <div class="reviews__inner-wrapper">
+                  <h4 class="reviews__title">Вася Николаев</h4>
+                  <p class="reviews__intro">30 лет, прораб</p>
+                </div>
+                <p class="reviews__content">«Не следует, однако забывать, что рамки и место обучения кадров требуют определения и уточнения систем массового участия. Товарищи! консультация с широким активом позволяет оценить значение модели развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий.»</p>
+              </article>
+
+              <article class="reviews__item reviews__item--review-kolya">
+                <div class="reviews__inner-wrapper">
+                  <h4 class="reviews__title">Коля Васечкин</h4>
+                  <p class="reviews__intro">45 лет, смотритель музея</p>
+                </div>
+                <p class="reviews__content">«Талантливые же личности живут только тем, что творят, поэтому сами по себе неинтересны. Великий поэт — подлинно великий поэт — самое непоэтическое существо на свете. Но второразрядные поэты — люди просто обворожительные. Чем невыразительнее их поэзия, тем живописнее они выглядят. Если человек выпустил книжку плохих сонетов, можно заранее сказать, что он совершенно неотразим. Жизнь такого человека наполнена той поэзией, которую он не в состоянии выразить в своих стихах. А великие поэты изливают на бумаге ту поэзию, которую не осмеливаются вносить в свою жизнь»</p>
+              </article>
+
+              <button class="reviews__toggle reviews__toggle--prev"><svg class="arrow" width="22" height="41"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left"></use></svg>предыдущий отзыв</button>
+              <button class="reviews__toggle reviews__toggle--next"><svg class="arrow" width="22" height="41"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use></svg>следующий отзыв</button>
+
+              <div class="slider-items reviews__nav">
+                <label class="slider-items__btn" for="reviews-radio-1">1</label>
+                <label class="slider-items__btn" for="reviews-radio-2">2</label>
+                <label class="slider-items__btn" for="reviews-radio-3">3</label>
+              </div>
           </div>
         </div>
       </section>
 
       <section class="rates">
-        <table class="rates__table">
-            <thead>
-              <tr class="rates__table-row-subscription">
-                <th class="rates__table-subscription-cell rates__first-column"></th>
-                <th class="rates__table-subscription-cell rates__base-column">
-                  База<br><span class="rates__table-money">1.99 USD</span>
-                </th>
-                <th class="rates__table-subscription-cell rates__standart-column">
-                  Стандарт<br><span class="rates__table-money">3,99 USD</span>
-                </th>
-                <th class="rates__table-subscription-cell rates__unlim-column">
-                  Анлим<br><span class="rates__table-money">9,99 USD</span>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="rates__table-row-filter">
-                <th class="rates__table-subscription-cell rates__first-column">Розовый фильтр</th>
-                <td class="rates__table-filter-cell rates__base-column">
-                  <img class="rates__table-yes-icon" src="img/yes.svg" alt="Да">
-                </td>
-                <td class="rates__table-filter-cell rates__standart-column">
-                  <img class="rates__table-yes-icon" src="img/yes.svg" alt="Да">
-                </td>
-                <td class="rates__table-filter-cell rates__unlim-column">
-                  <img class="rates__table-yes-icon" src="img/yes.svg" alt="Да">
-                </td>
-              </tr>
-              <tr class="rates__table-row-smiles">
-                <th class="rates__table-subscription-cell rates__first-column">Смайлики</th>
-                <td class="rates__table-smiles-cell rates__base-column">
-                  <img class="rates__table-no-icon" src="img/no.svg" alt="Нет">
-                </td>
-                <td class="rates__table-smiles-cell rates__standart-column">
-                  <img class="rates__table-yes-icon" src="img/yes.svg" alt="Да">
-                </td>
-                <td class="rates__table-smiles-cell rates__unlim-column">
-                  <img class="rates__table-yes-icon" src="img/yes.svg" alt="Да">
-                </td>
-              </tr>
-              <tr class="rates__table-row-coments">
-                <th class="rates__table-subscription-cell rates__first-column">Комментарии</th>
-                <td class="rates__table-coments-cell rates__base-column">
-                  <img class="rates__table-no-icon" src="img/no.svg" alt="Нет">
-                </td>
-                <td class="rates__table-coments-cell rates__standart-column">
-                  <img class="rates__table-no-icon" src="img/no.svg" alt="Нет">
-                </td>
-                <td class="rates__table-coments-cell rates__unlim-column">
-                  <img class="rates__table-yes-icon" src="img/yes.svg" alt="Да">
-                </td>
-              </tr>
-            </tbody>
-        </table>
-          <div class="switcher switcher--table">
-            <button class="switcher__toggle switcher__toggle--current"><span class="switcher_number visually-hidden">1</span></button>
-            <button class="switcher__toggle"><span class="switcher_number visually-hidden">2</span></button>
-            <button class="switcher__toggle"><span class="switcher_number visually-hidden">3</span></button>
+        <div class="rates__wrapper">
+          <div class="rates__items">
+            <input class="rates__switcher" type="radio" name="rates" id="rates-radio-1">
+            <input class="rates__switcher" type="radio" name="rates" id="rates-radio-2" checked>
+            <input class="rates__switcher" type="radio" name="rates" id="rates-radio-3">
+
+            <table class="rates__list">
+              <thead class="rates__list-head">
+                <tr>
+                  <th class="rates__value rates__value--empty"></th>
+                  <th class="rates__value">База<p>1,99 USD</p></th>
+                  <th class="rates__value rates__value--flag">Стандарт<p>3,99 USD</p><svg class="rates__hit" width="74" height="73"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#hit_ribbon"></use></svg></th>
+                  <th class="rates__value">Анлим<p>9,99 USD</p></th>
+                </tr>
+              </thead>
+              <tbody class="rates__list-body">
+                <tr>
+                  <td class="rates__field rates__field--empty rates__field--fill">Розовый фильтр</td>
+                  <td class="rates__field rates__field--ok">Розовый фильтр<svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg></td>
+                  <td class="rates__field rates__field--ok">Розовый фильтр<svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg></td>
+                  <td class="rates__field rates__field--ok">Розовый фильтр<svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg></td>
+                </tr>
+                <tr>
+                  <td class="rates__field rates__field--empty rates__field--fill">Смайлики</td>
+                  <td class="rates__field rates__field--cancel">Смайлики<svg class="icon-no" width="27" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use></svg></td>
+                  <td class="rates__field rates__field--ok">Смайлики<svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg></td>
+                  <td class="rates__field rates__field--ok">Смайлики<svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg></td>
+                </tr>
+                <tr>
+                  <td class="rates__field rates__field--empty rates__field--fill">Комментарии</td>
+                  <td class="rates__field rates__field--cancel">Комментарии<svg class="icon-no" width="27" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use></svg></td>
+                  <td class="rates__field rates__field--cancel">Комментарии<svg class="icon-no" width="27" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use></svg></td>
+                  <td class="rates__field rates__field--ok">Комментарии<svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="slider-items slider-items--none rates__nav">
+              <label class="slider-items__btn" for="rates-radio-1">1</label>
+              <label class="slider-items__btn slider-items__btn--active" for="rates-radio-2">2</label>
+              <label class="slider-items__btn" for="rates-radio-3">3</label>
+            </div>
           </div>
+        </div>
       </section>
 
       <section class="info">
@@ -183,7 +204,7 @@
             <p class="info__email-text">mail@htmlacademy.ru</p>
           </div>
           <div class="info__guest">
-            <h3 class="info__guest-title">Приезжйате в гости:</h3>
+            <h3 class="info__guest-title">Приезжайте в гости:</h3>
             <p class="info__guest-text">ул. Большая Конюшенная, 19/8</p>
           </div>
       </section>
@@ -196,8 +217,7 @@
 
     <footer class="footer">
       <div class="footer__logo-wrapper">
-        <img class="footer__logo-glasses" src="img/glasses.svg">
-        <img class="footer__logo-PINK" src="img/pink (1).svg">
+        <img class="footer__logo-glasses" src="img/logotype-blue-tablet.svg">
       </div>
       <div class="footer__wrapper">
         <ul class="footer__social-list social">
@@ -219,7 +239,7 @@
         </ul>
       </div>
       <div class="footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
+        <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="footer__copyright-logo" src="img/htmlacademy.svg" alt="HTML ACADEMY" width="27" height="34">
         </a>

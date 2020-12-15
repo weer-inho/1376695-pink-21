@@ -11,6 +11,10 @@
 .site-list__item {
   text-align: center;
 
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    padding: 0 0 0 17px;
+  }
+
   @media (min-width: @desktop-width) {
     min-width: 180px;
   }
@@ -18,7 +22,7 @@
 
 .site-list__link {
   display: inline-block;
-  height: 63px;
+  height: 64px;
   width: 100%;
   color: #ffffff;
   text-transform: uppercase;
@@ -33,6 +37,6 @@
 
 .site-list__link-text {
   display: inline-block;
-  margin-top: 21px;
+  margin-top: 18px;
   font-size: 18px;
 }

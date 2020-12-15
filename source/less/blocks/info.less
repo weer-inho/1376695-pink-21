@@ -1,15 +1,17 @@
 .info {
+  display: grid;
+  grid-template-rows: 90px 76px 80px 110px;
   text-align: center;
+  min-height: 412px;
+  padding: 42px 20px 20px;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    display: grid;
     grid-template-rows: 200px 1fr;
     grid-template-columns: 1fr 1fr;
     min-height: 404px;
   }
 
   @media (min-width: @desktop-width) {
-    display: grid;
     grid-template-rows: 200px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     min-height: 404px;
@@ -20,6 +22,8 @@
   .oslight();
   font-size: 24px;
   text-align: center;
+  line-height: 120%;
+  margin: 0 0 0 0;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     font-size: 40px;
@@ -39,6 +43,7 @@
 .info__guest-title {
   .osbold();
   font-size: 18px;
+  margin: 0 0 0 0;
 }
 
 .info__call-text,
@@ -47,6 +52,7 @@
   .oslight();
   color: @deepred;
   font-size: 24px;
+  margin: 0 0 0 0;
 }
 
 .info__guest {
