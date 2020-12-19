@@ -28,31 +28,33 @@
 
     <header class="page-header">
       <div class="page-header__container">
-        <div class="page-header__logo-wrapper">
-          <a class="page-header__logo">
-            <img src="img/pink.svg" alt="Барбершоп 'Бородинский'" width="74" height="23">
-          </a>
-        </div>
-        <nav class="main-nav">
-          <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span>
-          </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
-                <a class="site-list__link"><span class="site-list__link-text">Главная</span></a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="photo.html"><span class="site-list__link-text">Фотографии</span></a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="contest.html"><span class="site-list__link-text">Конкурс</span></a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru/"><span class="site-list__link-text">HTML ACADEMY</span></a>
-              </li>
-            </ul>
+        <div class="page-header__wrapper">
+          <div class="page-header__logo-wrapper">
+            <a class="page-header__logo">
+              <img src="img/pink.svg" alt="Барбершоп 'Бородинский'" width="74" height="23">
+            </a>
           </div>
-        </nav>
+          <nav class="main-nav">
+            <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item site-list__item--active">
+                  <a class="site-list__link"><span class="site-list__link-text">Главная</span></a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="photo.html"><span class="site-list__link-text">Фотографии</span></a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="contest.html"><span class="site-list__link-text">Конкурс</span></a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="https://htmlacademy.ru/"><span class="site-list__link-text">HTML Academy</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          </div>
       </div>
 
       <section class="add">
@@ -78,25 +80,29 @@
           <p class="general__text">Нам есть, что вам предложить!</p>
         </div>
         <div class="general__list-wrapper">
-          <ul class="general__list">
-            <li class="general__list-item general__list-item--mood">
-              <h3 class="general__list-item-title">Поднимает настроение</h3>
-              <p class="general__list-item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="general__list-item general__list-item--world">
-              <h3 class="general__list-item-title">Меняет мир вокруг</h3>
-              <p class="general__list-item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="general__list-item general__list-item--friends">
-              <h3 class="general__list-item-title">Заводит новых друзей</h3>
-              <p class="general__list-item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
+          <div class="general__list-container">
+            <ul class="general__list">
+              <li class="general__list-item general__list-item--mood">
+                <h3 class="general__list-item-title">Поднимает настроение</h3>
+                <p class="general__list-item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="general__list-item general__list-item--world">
+                <h3 class="general__list-item-title">Меняет мир вокруг</h3>
+                <p class="general__list-item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить<span class="npsb-tablet">&nbsp;</span>эффект</p>
+              </li>
+              <li class="general__list-item general__list-item--friends">
+                <h3 class="general__list-item-title">Заводит новых<span class="npsb-desktop">&nbsp;</span>друзей</h3>
+                <p class="general__list-item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="effect">
-          <h2 class="effect__heading">Эффект на 24 часа!</h2>
-          <p class="effect__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a class="effect__link" href="#">Узнать больше об исследовании</a>
+        <div class="effect__wrapper">
+          <div class="effect">
+            <h2 class="effect__heading">Эффект на<span class="npsb-tablet">&nbsp;</span>24 часа!</h2>
+            <p class="effect__description">Британские ученые провели исследования и доказали, что<span class="npsb-desktop">&nbsp;</span>положительный эффект от<span class="npsb-tablet">&nbsp;</span>использования приложения длится целые сутки!</p>
+            <a class="effect__link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </section>
 

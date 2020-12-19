@@ -4,20 +4,13 @@
   padding: 0;
 
   @media (min-width: @desktop-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 155px 184px 154px 207px;
   }
 }
 
 .site-list__item {
   text-align: center;
-
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    padding: 0 0 0 17px;
-  }
-
-  @media (min-width: @desktop-width) {
-    min-width: 180px;
-  }
 }
 
 .site-list__link {
@@ -31,6 +24,10 @@
   border-top: 1px solid #485461;
 
   @media (min-width: @desktop-width) {
+    height: 100%;
+    .os();
+    text-transform: none;
+    font-size: 18px;
     border: none;
   }
 }
@@ -39,4 +36,8 @@
   display: inline-block;
   margin-top: 18px;
   font-size: 18px;
+
+  @media (min-width: @desktop-width) {
+    margin: 42px 0 0 0;
+  }
 }

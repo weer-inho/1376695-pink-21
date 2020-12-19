@@ -4,15 +4,28 @@
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     display: grid;
     min-height: 618px;
-    grid-template-rows: 287px 1fr;
+    width: 660px;
+    margin: auto;
+    background-image: url("../../img/phone-tablet.png");
+    background-position: 0 bottom;
+    background-repeat: no-repeat;
+    grid-template-rows: 215px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: @desktop-width) {
+    width: 940px;
+    min-height: 645px;
+    background-image: url("../../img/phone-desktop.png");
+    background-position: 16px bottom;
+    background-repeat: no-repeat;
     display: grid;
     grid-column-start: 1;
     grid-column-end: -1;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 213px 1fr;
+    margin: auto auto 0;
+    padding: 0;
   }
 }
 
@@ -30,16 +43,21 @@
     grid-row-end: -1;
     grid-column-start: 2;
     grid-column-end: -1;
-    background-image: url("../../img/screen.jpg");
+    background-image: none;
     background-repeat: no-repeat;
-    background-position: 90px 147px;
+    background-position: 33px 105px;
     background-size: 195px 346px;
   }
 
   @media (min-width: @desktop-width) {
     order: 2;
+    background-image: none;
     background-position: 173px 143px;
     background-size: 230px 408px;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    grid-column-start: 2;
+    grid-column-end: -1;
   }
 }
 
@@ -54,8 +72,15 @@
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     font-size: 40px;
-    margin: auto;
+    margin: 69px 0 0 46px;
     width: 247px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    margin: 0 0 0 0;
+    line-height: 138%;
+    width: 300px;
   }
 }
 
@@ -69,10 +94,13 @@
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     background-color: transparent;
+    grid-template-rows: 101px 89px 50px;
   }
 
   @media (min-width: @desktop-width) {
     background-color: transparent;
+    padding: 29px 0 0 0;
+    grid-template-rows: 122px 108px 50px;
   }
 }
 
@@ -89,6 +117,14 @@
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     background-color: transparent;
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+    width: 300px;
+    font-size: 21px;
+    margin: 0 auto 0 0;
   }
 }
 
@@ -103,6 +139,10 @@
     url("../../img/microsoft-logo.svg");
   background-repeat: no-repeat;
   background-position: left bottom, center bottom, right bottom;
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto 0 48px;
+  }
 }
 
 .add__available {
@@ -112,4 +152,15 @@
   color: @white;
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    font-size: 18px;
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    width: 300px;
+    margin: 0 auto 0 0;
+  }
 }

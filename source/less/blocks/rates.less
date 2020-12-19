@@ -1,8 +1,18 @@
 .rates {
   position: relative;
   min-height: 461px;
-  background-color: #e5e5e5;
+  background-color: #f2f2f2;
   padding: 82px 0 0;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    padding: 97px 0 0 0;
+    min-height: 387px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 57px 0 0 0;
+    min-height: 434px;
+  }
 }
 
 .rates__wrapper {
@@ -11,8 +21,8 @@
   overflow: hidden;
 }
 
-@media (max-width: 699px) {
-  .rates__items {
+.rates__items {
+  @media (max-width: @mobile-width-only) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +33,7 @@
   display: none;
 }
 
-@media (max-width: 699px) {
+@media (max-width: @mobile-width-only) {
   .rates__switcher:first-child:checked ~ .rates__list {
     transform: translateX(280px);
     transition: 0.5s;
@@ -54,17 +64,13 @@
   box-sizing: border-box;
   // transform: translateX(-280px);
   border-collapse: collapse;
-}
 
-@media (min-width: 700px) {
-  .rates__list {
-    transform: none;
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     width: 620px;
+    margin: 0 auto;
   }
-}
 
-@media (min-width: 1200px) {
-  .rates__list {
+  @media (min-width: @desktop-width) {
     min-width: 940px;
   }
 }
@@ -75,6 +81,13 @@
   height: 90px;
 }
 
+.rates__list-body .rates__field {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    border: 2px solid #e5e5e5;
+    border-radius: 4px;
+  }
+}
+
 .rates__value {
   position: relative;
   height: 98px;
@@ -82,6 +95,30 @@
   .osbold();
   text-transform: uppercase;
   border-left: 2px solid @white;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    height: 79px;
+    padding: 11px 0 6px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 234px;
+    height: 98px;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 7px 0 6px 0;
+  }
+}
+
+.rates__value:nth-child(1),
+.rates__value:nth-child(3) {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 152px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 234px;
+  }
 }
 
 .rates__value--flag::before {
@@ -118,6 +155,10 @@
   .oslight();
   margin: 2px 0 0 0;
   font-size: 18px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .rates__field {
@@ -130,10 +171,22 @@
   text-transform: uppercase;
   height: 60px;
   padding: 0 0 0 19px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    height: 46px;
+    padding: 2px 0 0 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    height: 61px;
+    padding: 0 0 0 21px;
+  }
 }
 
-@media (max-width: 699px) {
-  .rates__field--empty {
+
+.rates__field--empty {
+  @media (max-width: @mobile-width-only) {
     min-width: 0;
     margin: 0;
     padding: 0;
@@ -142,9 +195,21 @@
     background-color: transparent;
     border: none;
   }
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 155px;
+    text-transform: none;
+  }
 }
 
-@media (min-width: 700px) {
+.rates__value.rates__value--empty {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    background-color: #f2f2f2;
+    border: none;
+  }
+}
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
   .rates__field--cancel,
   .rates__field--none,
   .rates__field--ok {
@@ -158,4 +223,14 @@
   position: absolute;
   top: 19px;
   right: 20px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    top: 10px;
+    right: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 31%;
+    right: 44%;
+  }
 }
