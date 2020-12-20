@@ -2,4 +2,19 @@
   .os();
   color: @deepblue;
   font-size: 14px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    display: inline-block;
+    margin: 6px 0 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.copyright__link {
+  display: inline-block;
+  height: 34px;
+  margin: 0 0 0 15px;
 }

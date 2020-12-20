@@ -1,19 +1,39 @@
 .general__text-wrapper {
-  min-height: 320px;
-  padding: 46px 0 0;
+  min-height: 251px;
+  padding: 42px 0 0;
   text-align: center;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    min-height: 239px;
+    padding: 48px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 67px 0 0;
+    min-height: 262px;
+  }
 }
 
 .general__text {
   .oslight();
   color: @black;
   font-size: 24px;
-  margin: 0 auto 40px auto;
+  line-height: 120%;
+  margin: 0 auto 31px auto;
   width: 280px;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     font-size: 40px;
     width: 588px;
+    margin: 0 auto 4px auto;
+    line-height: 130%;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    width: 780px;
+    margin: 0 auto;
+    line-height: 130%;
   }
 }
 
@@ -21,48 +41,133 @@
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     width: 580px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 580px;
+  }
 }
 
 .general__list-wrapper {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+  }
+}
+
+.general__list-container {
   background-color: #f2f2f2;
-  min-height: 800px;
-  padding: 60px 20px 0;
+  min-height: 751px;
+  padding: 29px 20px 0;
   text-align: center;
   background-image:
     url("../../img/iphone screen-3.jpg"),
     url("../../img/iphone 3.png");
   background-repeat: no-repeat;
-  background-position: center bottom, center 513px;
+  background-position: center 509px, center 474px;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    min-height: 500px;
-    background-image:
-      url("../../img/iphone screen-3.jpg"),
-      url("../../img/iphone 3 (1).png");
+    width: 660px;
+    min-height: 487px;
+    margin: 0 auto;
+    background-image: url("../../img/Frame 2.png");
     background-repeat: no-repeat;
-    background-size: 237px 421px, auto;
-    background-position: 30px bottom, 13px 16px;
+    background-size: auto;
+    background-position: 20px 6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    min-height: 550px;
+    margin: 0 auto;
+    padding: 28px 0 0 25px;
+    background-image: none;
   }
 }
 
 .general__list {
+  display: grid;
+  grid-gap: 30px;
   margin: 0 auto 0 auto;
-  padding: 0;
+  padding: 18px 0 0 0;
   list-style: none;
   width: 280px;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 310px;
+    grid-template-rows: 111px 113px 111px;
     margin: 0 0 0 auto;
+    padding: 48px 0 0 0;
     text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    margin: 0;
+    padding: 0;
+    grid-template-rows: 1fr;
+    grid-template-columns: 252px 249px 248px;
+    grid-gap: 70px;
+  }
+}
+
+.general__list-item {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 593px;
+    background-image: url("../../img/img-mood-phone.png");
+    background-repeat: no-repeat;
+    background-position: -29px 32px;
+  }
+}
+
+.general__list-item:nth-child(2) {
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/img-world-phone.png");
+  }
+}
+
+.general__list-item:nth-child(3) {
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/img-friends-phone.png");
+  }
+}
+
+.general__list-item:nth-child(2) .npsb-tablet {
+  @media (min-width: @desktop-width) {
+    display: inline;
   }
 }
 
 .general__list-item-title {
   .osbold();
   font-size: 18px;
+  margin: 0 0 13px 0;
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 0 22px 0;
+  }
 }
 
 .general__list-item-text {
   .os();
   font-size: 14px;
+  line-height: 24px;
+  margin: 0 0 0 0;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+  }
 }

@@ -11,12 +11,10 @@
     display: grid;
     grid-template-rows: min-content 1fr;
     min-height: 110px;
-    background-image:
-      url("../../img/phone-tablet.png"),
-      url("../../img/back-mobile.jpg");
+    background-image: url("../../img/back tablet.jpg");
     background-repeat: no-repeat;
-    background-position: 95px 412px, center;
-    background-size: 660px 545px, cover;
+    background-position: center;
+    background-size: cover;
   }
 
   @media (min-width: @desktop-width) {
@@ -25,12 +23,10 @@
     grid-template-rows: min-content 1fr;
     padding: 0;
     background-color: rgba(0, 0, 0, 0.1);
-    background-image:
-      url("../../img/phone-desktop.png"),
-      url("../../img/back-mobile.jpg");
+    background-image: url("../../img/back-desktop.jpg");
     background-repeat: no-repeat;
-    background-position: 202px 188px, center;
-    background-size: 1050px 645px, cover;
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -40,13 +36,31 @@
   }
 }
 
+.page-header__wrapper {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    width: 940px;
+    margin: 0 auto;
+    grid-template-columns: 278px 662px;
+  }
+}
+
 .page-header__logo-wrapper {
-  margin-left: 20px;
-  min-height: 45px;
+  padding: 23px 0 0 20px;
+  min-height: 70px;
+  border-bottom: 1px solid @black;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    min-height: 109px;
+    padding: 44px 0 0 90px;
+  }
 
   @media (min-width: @desktop-width) {
+    width: 147px;
     text-align: center;
-    padding-top: 30px;
+    margin: 0 0 0 0;
+    padding: 44px 0 0 71px;
+    border: none;
   }
 }
 
@@ -54,9 +68,7 @@
   background-color: @deepblue;
 
   @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 350px 850px;
+    display: block;
     min-height: 110px;
     background-color: rgba(0, 0, 0, 0.3);
   }
