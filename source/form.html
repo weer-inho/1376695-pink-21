@@ -9,31 +9,33 @@
 <body class="page__body">
     <header class="page-header page-header--small">
     <div class="page-header__container">
-      <div class="page-header__logo-wrapper">
-        <a class="page-header__logo">
-          <img src="img/pink.svg" alt="Барбершоп 'Бородинский'" width="74" height="23">
-        </a>
-      </div>
-      <nav class="main-nav">
-        <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link"><span class="site-list__link-text">Главная</span></a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html"><span class="site-list__link-text">Фотографии</span></a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="contest.html"><span class="site-list__link-text">Конкурс</span></a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/"><span class="site-list__link-text">HTML ACADEMY</span></a>
-            </li>
-          </ul>
+      <div class="page-header__wrapper">
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo">
+            <img src="img/pink.svg" alt="Барбершоп 'Бородинский'" width="74" height="23">
+          </a>
         </div>
-      </nav>
+        <nav class="main-nav">
+          <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link"><span class="site-list__link-text">Главная</span></a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="photo.html"><span class="site-list__link-text">Фотографии</span></a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="contest.html"><span class="site-list__link-text">Конкурс</span></a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="https://htmlacademy.ru/"><span class="site-list__link-text">HTML Academy</span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        </div>
     </div>
 
     <div class="form-contest">
@@ -52,7 +54,7 @@
         <fieldset class="form__name">
           <div class="form__name-wrapper">
             <label for="first-name" class="form__name-label">Фамилия:</label>
-            <input class="form__name-input" id="first-name" type="text" name="first-name" placeholder="Укажите фамилию*" required>
+            <input class="form__name-input" id="first-name" type="text" name="first-name" placeholder="Укажите фамилию *" required>
           </div>
           <div class="form__name-wrapper">
             <label for="middle-name" class="form__name-label">Имя:</label>
@@ -99,18 +101,18 @@
         <fieldset class="form__contacts">
           <legend class="form__contacts-legend">Контактная информация</legend>
           <div class="form__contacts-wrapper">
-            <label class="form-contacts-label" for="phone">Номер телефона</label>
+            <label class="form__contacts-label" for="phone">Номер телефона</label>
             <input class="form__contacts-input" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста" pattern="[0-9]{1}-[0-9]{3}-[0-9]{7}">
           </div>
           <div class="form__contacts-wrapper">
-            <label class="form-contacts-label" for="email">Адрес почты</label>
-            <input class="form__contacts-input" id="email" type="email" name="email" placeholder="Введите почту*" required>
+            <label class="form__contacts-label" for="email">Адрес почты</label>
+            <input class="form__contacts-input" id="email" type="email" name="email" placeholder="Введите почту *" required>
           </div>
         </fieldset>
 
         <div class="form__app-container">
           <fieldset class="form__app">
-            <legend class="form__app-legend">С каким приложением вы путешествовали?</legend>
+            <legend class="form__app-legend">С каким приложением путешествовали?</legend>
             <div class="form__app-wrapper">
               <input class="form__app-input visually-hidden" id="ios" type="radio" name="device" checked>
               <label class="form__app-label" for="ios">Pink для iOS</label>
@@ -126,13 +128,15 @@
           </fieldset>
         </div>
 
-        <fieldset class="form__emotion">
-          <legend class="form__emotion-legend">Опишите свои эмоции</legend>
-          <textarea class="form__emotion-text" name="emotion" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </fieldset>
+        <div class="form__emotion-container">
+          <fieldset class="form__emotion">
+            <legend class="form__emotion-legend">Опишите свои эмоции</legend>
+            <textarea class="form__emotion-text" name="emotion" cols="30" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+        </div>
 
         <button class="form__submit-button">Отправить форму</button>
-        <p class="form__reminder"><span class="form__star-symbol">*</span> — обязательные поля</p>
+        <p class="form__reminder"><span class="form__star-symbol">*</span> — обязательные<span class="form__reminder-desktop"> для заполнения</span> поля</p>
 
       </form>
     </section>
@@ -141,8 +145,7 @@
 
   <footer class="footer">
     <div class="footer__logo-wrapper">
-      <img class="footer__logo-glasses" src="img/glasses.svg">
-      <img class="footer__logo-PINK" src="img/pink (1).svg">
+      <img class="footer__logo" src="img/img-glasses-logo.svg">
     </div>
     <div class="footer__wrapper">
       <ul class="footer__social-list social">

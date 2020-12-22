@@ -2,7 +2,9 @@
   display: grid;
   grid-template-rows: 67px 73px 54px;
   text-align: center;
+  width: 176px;
   min-height: 320px;
+  margin: 0 auto 0;
   padding: 40px 0 0 0;
   box-sizing: border-box;
 
@@ -12,7 +14,7 @@
     min-height: 127px;
     width: 660px;
     margin: 0 auto;
-    padding: 34px 0 0 0;
+    padding: 58px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -21,7 +23,7 @@
     min-height: 197px;
     width: 978px;
     margin: 0 auto;
-    padding: 70px 0 0 0;
+    padding: 62px 0 0 0;
   }
 }
 
@@ -31,6 +33,11 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 172px;
+    margin: 0 0 0 6px;
+  }
+
+  @media (min-width: @desktop-width) {
     width: 172px;
     margin: 0 0 0 6px;
   }
@@ -76,9 +83,9 @@
 
   @media (min-width: @desktop-width) {
     align-items: flex-start;
-    padding: 0;
     height: 51px;
     width: 172px;
     margin: 9px 9px 0 auto;
+    padding: 0;
   }
 }
