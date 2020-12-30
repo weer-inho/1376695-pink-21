@@ -81,7 +81,7 @@
   display: grid;
   grid-template-columns: 44px 119px 32px;
   grid-template-rows: 70px 1fr;
-  min-height:129px;
+  min-height: 129px;
   width: 206px;
   margin: 32px auto 39px;
 
@@ -99,7 +99,7 @@
       url("../../img/div.svg"),
       url("../../img/div.svg"),
       url("../../img/div.svg");
-      background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: 275px 1px, 275px 1px, 275px 1px;
     background-position: 35px 56px, 35px 129px, 35px 198px;
   }
@@ -118,7 +118,7 @@
       url("../../img/div.svg"),
       url("../../img/div.svg"),
       url("../../img/div.svg");
-      background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: 410px 1px, 410px 1px, 410px 1px;
     background-position: 0 56px, 0 129px, 0 190px;
   }
@@ -140,20 +140,6 @@
 
   @media (min-width: @desktop-width) {
     display: none;
-  }
-}
-
-.editor__button-window {
-  padding: 0;
-
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    width: 22px;
-    height: 22px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 44px;
-    height: 44px;
   }
 }
 
@@ -249,17 +235,22 @@
 .editor__button-window {
   border: none;
   background-color: transparent;
+  padding: 0;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     position: relative;
+    width: 22px;
+    height: 22px;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
+    width: 44px;
+    height: 44px;
   }
 }
 
-.editor__button-window:before {
+.editor__button-window::before {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     content: "";
     position: absolute;
@@ -281,7 +272,7 @@
   }
 }
 
-.editor__button-window:after {
+.editor__button-window::after {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     content: "";
     position: absolute;
@@ -297,7 +288,6 @@
   @media (min-width: @desktop-width) {
     content: "";
     position: absolute;
-    top: 15px;
     top: 17px;
     right: -309px;
     height: 10px;
@@ -307,7 +297,7 @@
   }
 }
 
-.editor__button-window:nth-child(1):after {
+.editor__button-window:nth-child(1)::after {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     right: -189px;
   }
@@ -317,7 +307,7 @@
   }
 }
 
-.editor__button-window:nth-child(3):after {
+.editor__button-window:nth-child(3)::after {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     right: -139px;
   }
