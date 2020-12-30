@@ -1,5 +1,16 @@
 .editor {
   text-align: center;
+  background-color: #f2f2f2;
+  padding: 21px 0 29px 0;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    padding: 57px 0 53px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 0 53px 0;
+    background-color: @white;
+  }
 }
 
 .editor__button {
@@ -11,6 +22,17 @@
   .osbold();
   font-size: 18px;
   border-radius: 26px;
+  margin: 0 0 12px 0;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 260px;
+    margin: 0 0 24px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 183px;
+    margin: 0 40px 0 0;
+  }
 }
 
 .editor__button--cancel {
@@ -25,14 +47,16 @@
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     width: 620px;
-    grid-template-rows: 200px 200px;
+    grid-template-rows: 266px 134px;
     grid-template-columns: 310px 310px;
   }
 
   @media (min-width: @desktop-width) {
     width: 940px;
-    grid-template-rows: 200px 200px;
-    grid-template-columns: 470px 470px;
+    grid-template-rows: 345px 113px;
+    grid-template-columns: 390px 476px;
+    background-color: #f2f2f2;
+    padding: 56px 0 0 80px;
   }
 }
 
@@ -53,19 +77,154 @@
 }
 
 .editor__window {
+  position: relative;
+  display: grid;
+  grid-template-columns: 44px 119px 32px;
+  grid-template-rows: 70px 1fr;
+  min-height:129px;
+  width: 206px;
+  margin: 32px auto 39px;
+
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 310px;
     grid-column-start: 2;
     grid-column-end: -1;
     grid-row-start: 1;
     grid-row-end: 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: 74px 71px 70px;
+    margin: 0;
+    padding: 9px 0 0 39px;
+    background-image:
+      url("../../img/div.svg"),
+      url("../../img/div.svg"),
+      url("../../img/div.svg");
+      background-repeat: no-repeat;
+    background-size: 275px 1px, 275px 1px, 275px 1px;
+    background-position: 35px 56px, 35px 129px, 35px 198px;
   }
 
   @media (min-width: @desktop-width) {
+    width: 410px;
     grid-column-start: 2;
     grid-column-end: -1;
     grid-row-start: 1;
     grid-row-end: 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 70px 70px;
+    margin: 0;
+    padding: 0 0 0 0;
+    background-image:
+      url("../../img/div.svg"),
+      url("../../img/div.svg"),
+      url("../../img/div.svg");
+      background-repeat: no-repeat;
+    background-size: 410px 1px, 410px 1px, 410px 1px;
+    background-position: 0 56px, 0 129px, 0 190px;
   }
+}
+
+.editor__window::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
+  height: 1px;
+  margin-left: -50vw;
+  background-color: fade(@deepblue, 10%);
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 10vw;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.editor__button-window {
+  padding: 0;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.editor__button-window svg {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.editor__button-window:nth-child(2) svg {
+  @media (min-width: @desktop-width) {
+    width: 48px;
+    height: 49px;
+  }
+}
+
+.editor__button-window:nth-child(3) svg {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 17px;
+    height: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.editor__button-window svg path {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    fill: @deepred;
+  }
+
+  @media (min-width: @desktop-width) {
+    fill: @deepred;
+  }
+}
+
+.editor__scroll-bar {
+  position: absolute;
+  bottom: 26%;
+  left: -8%;
+  width: 240px;
+  height: 2px;
+  background-color: @deepblue;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.editor__scroll-bar::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: 14%;
+  width: 10px;
+  height: 10px;
+  background-color: @white;
+  border: 2px solid @deepred;
+  border-radius: 50%;
 }
 
 .editor__button-container {
@@ -74,12 +233,96 @@
     grid-column-end: -1;
     grid-row-start: 2;
     grid-row-end: -1;
+    padding: 0 0 0 23px;
   }
 
   @media (min-width: @desktop-width) {
+    justify-self: start;
     grid-column-start: 2;
     grid-column-end: -1;
     grid-row-start: 2;
     grid-row-end: -1;
+    padding: 0 0 0 0;
+  }
+}
+
+.editor__button-window {
+  border: none;
+  background-color: transparent;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
+.editor__button-window:before {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    bottom: 11px;
+    left: 51px;
+    width: 202px;
+    height: 2px;
+    background-color: @deepblue;
+  }
+
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 92px;
+    width: 288px;
+    height: 2px;
+    background-color: @deepblue;
+  }
+}
+
+.editor__button-window:after {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: -68px;
+    width: 10px;
+    height: 10px;
+    background-color: @white;
+    border: 2px solid @deepred;
+    border-radius: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    top: 15px;
+    top: 17px;
+    right: -309px;
+    height: 10px;
+    background-color: @white;
+    border: 2px solid @deepred;
+    border-radius: 50%;
+  }
+}
+
+.editor__button-window:nth-child(1):after {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    right: -189px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: -131px;
+  }
+}
+
+.editor__button-window:nth-child(3):after {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    right: -139px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: -222px;
   }
 }
