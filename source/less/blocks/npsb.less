@@ -1,3 +1,15 @@
+.npsb-mobile {
+  display: inline;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .npsb-tablet {
   display: none;
 
