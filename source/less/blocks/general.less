@@ -65,20 +65,27 @@
   min-height: 751px;
   padding: 29px 20px 0;
   text-align: center;
-  background-image:
-    url("../../img/iphone screen-3.jpg"),
-    url("../../img/iphone 3.png");
+  background-image: url("../../img/phone hello mobile.png");
   background-repeat: no-repeat;
-  background-position: center 509px, center 474px;
+  background-position: center 475px;
+  background-size: 157px 320px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/phone hello mobile@2x.png");
+  }
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     width: 660px;
     min-height: 487px;
     margin: 0 auto;
-    background-image: url("../../img/Frame 2.png");
+    background-image: url("../../img/phone hello tablet.png");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 268px 547px;
     background-position: 20px 6px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/phone hello tablet@2x.png");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -125,18 +132,31 @@
     background-image: url("../../img/img-mood-phone.png");
     background-repeat: no-repeat;
     background-position: -29px 32px;
+    background-size: 308px 490px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/img-mood-phone@2x.png");
+    }
   }
 }
 
 .general__list-item:nth-child(2) {
   @media (min-width: @desktop-width) {
     background-image: url("../../img/img-world-phone.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/img-world-phone@2x.png");
+    }
   }
 }
 
 .general__list-item:nth-child(3) {
   @media (min-width: @desktop-width) {
     background-image: url("../../img/img-friends-phone.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/img-friends-phone@2x.png");
+    }
   }
 }
 

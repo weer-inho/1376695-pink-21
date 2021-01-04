@@ -1,9 +1,20 @@
 .map {
   width: 100%;
-  height: 193px;
-  background-image: url("../../img/map.jpg");
+  height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 502px;
+  }
+}
+
+.map__iframe {
+  height: 200px;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     height: 374px;
