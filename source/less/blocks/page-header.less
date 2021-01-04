@@ -42,6 +42,17 @@
   }
 }
 
+.page-header--form {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    background-position: center 255px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: center 0;
+    background-size: 2560px 853px;
+  }
+}
+
 .page-header--small {
   @media (min-width: @desktop-width) {
     min-height: 253px;

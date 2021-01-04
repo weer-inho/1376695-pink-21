@@ -7,12 +7,16 @@
   <title>HTML Academy: Пинк Форма</title>
 </head>
 <body class="page__body">
-    <header class="page-header page-header--small">
+    <header class="page-header page-header--form page-header--small">
     <div class="page-header__container">
       <div class="page-header__wrapper">
         <div class="page-header__logo-wrapper">
           <a class="page-header__logo">
-            <img src="img/pink.svg" alt="Барбершоп 'Бородинский'" width="74" height="23">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
+              <img src="img/pink.svg" alt="Барбершоп 'Бородинский'" >
+            </picture>
           </a>
         </div>
         <nav class="main-nav">
@@ -143,7 +147,7 @@
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer footer--form">
     <div class="footer__logo-wrapper">
       <img class="footer__logo-glasses" src="img/logotype-blue-tablet.svg">
     </div>
