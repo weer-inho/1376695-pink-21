@@ -2,10 +2,14 @@
   font-family: "Open Sans Bold", "Arial", sans-serif;
   background-color: @deepblue;
   color: @white;
-  background-image: url("../../img/back-mobile.jpg");
+  background-image: url("../../img/back mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: center 256px;
+  background-size: auto 462px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/back mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     display: grid;
@@ -13,8 +17,12 @@
     min-height: 110px;
     background-image: url("../../img/back tablet.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: center bottom;
+    background-size: 1200px 729px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -27,6 +35,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-desktop@2x.jpg");
+    }
   }
 }
 
@@ -52,14 +64,14 @@
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     min-height: 109px;
-    padding: 44px 0 0 92px;
+    padding: 27px 0 0 20px;
   }
 
   @media (min-width: @desktop-width) {
     width: 147px;
     text-align: center;
     margin: 0 0 0 0;
-    padding: 44px 0 0 71px;
+    padding: 28px 0 0 0;
     border: none;
   }
 }
