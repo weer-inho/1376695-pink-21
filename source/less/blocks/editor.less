@@ -31,6 +31,12 @@
 
   @media (min-width: @desktop-width) {
     width: 183px;
+    margin: 0 0 0 0;
+  }
+}
+
+.editor__button:first-child {
+  @media (min-width: @desktop-width) {
     margin: 0 40px 0 0;
   }
 }
@@ -46,9 +52,9 @@
   margin: auto;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    width: 620px;
+    width: 629px;
     grid-template-rows: 266px 134px;
-    grid-template-columns: 310px 310px;
+    grid-template-columns: 309px 315px;
   }
 
   @media (min-width: @desktop-width) {
@@ -56,12 +62,15 @@
     grid-template-rows: 345px 113px;
     grid-template-columns: 390px 476px;
     background-color: #f2f2f2;
-    padding: 56px 0 0 80px;
+    padding: 56px 0 0 35px;
   }
 }
 
 .editor__img {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 300px;
+    height: 400px;
+    margin-right: auto;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -69,6 +78,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 300px;
+    height: 400px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -83,7 +94,7 @@
   grid-template-rows: 70px 1fr;
   min-height: 129px;
   width: 206px;
-  margin: 32px auto 39px;
+  margin: 27px auto 39px;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     width: 310px;
@@ -94,7 +105,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 74px 71px 70px;
     margin: 0;
-    padding: 9px 0 0 39px;
+    padding: 9px 0 0 45px;
     background-image:
       url("../../img/div.svg"),
       url("../../img/div.svg"),
@@ -113,7 +124,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 70px 70px 70px;
     margin: 0;
-    padding: 0 0 0 0;
+    padding: 0 0 0 45px;
     background-image:
       url("../../img/div.svg"),
       url("../../img/div.svg"),
@@ -219,7 +230,7 @@
     grid-column-end: -1;
     grid-row-start: 2;
     grid-row-end: -1;
-    padding: 0 0 0 23px;
+    padding: 0 0 0 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -228,7 +239,7 @@
     grid-column-end: -1;
     grid-row-start: 2;
     grid-row-end: -1;
-    padding: 0 0 0 0;
+    padding: 0 0 0 45px;
   }
 }
 
@@ -290,6 +301,7 @@
     position: absolute;
     top: 17px;
     right: -309px;
+    width: 10px;
     height: 10px;
     background-color: @white;
     border: 2px solid @deepred;
