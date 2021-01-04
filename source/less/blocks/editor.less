@@ -224,35 +224,6 @@
   border-radius: 50%;
 }
 
-.editor__scroll-bar {
-  position: absolute;
-  bottom: 26%;
-  left: -8%;
-  width: 240px;
-  height: 2px;
-  background-color: @deepblue;
-
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    display: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.editor__scroll-bar::after {
-  content: "";
-  position: absolute;
-  top: -6px;
-  right: 14%;
-  width: 10px;
-  height: 10px;
-  background-color: @white;
-  border: 2px solid @deepred;
-  border-radius: 50%;
-}
-
 .editor__button-container {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     grid-column-start: 2;
