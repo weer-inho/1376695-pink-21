@@ -42,6 +42,7 @@ const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff, woff2}",
     "source/js/**",
+    "source/img/**",
     "source/*.ico"
   ], {
     base: "source"
@@ -119,9 +120,7 @@ const build = gulp.series(
   gulp.parallel(
   copy,
   html,
-  createWebp,
   images,
-  sprite,
   )
 );
 
