@@ -211,6 +211,21 @@
   }
 }
 
+.form__name-input:hover,
+.form__contacts-input:hover,
+.form__emotion-text:hover {
+  border: 2px solid @deepblue;
+  transition: 0.2s;
+}
+
+.form__name-input:focus,
+.form__contacts-input:focus,
+.form__emotion-text:focus {
+  outline: 0;
+  border: 2px solid @deepred;
+  transition: 0.2s;
+}
+
 .form__name-wrapper {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     height: 60px;
@@ -426,6 +441,16 @@
   }
 }
 
+.form__achievements-label:hover::before {
+  border: 2px solid @deepblue;
+  transition: 0.2s;
+}
+
+.form__achievements-label:active::before {
+  border: 2px solid @deepred;
+  transition: 0.2s;
+}
+
 .form__achievements-input:checked + .form__achievements-label::after {
   content: "";
   position: absolute;
@@ -586,6 +611,14 @@
   }
 }
 
+.form__app-label:hover::before {
+  border: 2px solid @deepblue;
+  transition: 0.2s;
+}
+
+.form__app-label:active::before {
+  border: 2px solid @deepred;
+}
 
 .form__app-input:checked + .form__app-label::after {
   content: "";
@@ -663,6 +696,22 @@
     grid-column-end: 2;
     margin: 29px 0 0 0;
   }
+}
+
+.form__submit-button:hover {
+  background-color: #1c9b5e;
+  transition: 0.2s;
+}
+
+.form__submit-button:active {
+  outline: 0;
+  background-color: #1c9b5e;
+  color: fade(@white, 30%);
+  transition: 0.2s;
+}
+
+.form__submit-button[disabled] {
+  background-color: #e5e5e5;
 }
 
 .form__star-symbol {

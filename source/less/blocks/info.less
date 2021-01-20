@@ -75,6 +75,18 @@
   }
 }
 
+.info__email-text:hover {
+  color: @deepblue;
+  transition: 0.2s;
+  text-decoration: underline;
+}
+
+.info__email-text:active {
+  color: fade(@deepblue, 30%);
+  transition: 0.2s;
+  text-decoration: none;
+}
+
 .info__guest {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     grid-column-start: 1;

@@ -1,21 +1,46 @@
+.copyright__link {
+  text-decoration: none;
+  position: relative;
+  width: 130px;
+  height: 34px;
+  text-align: left;
+}
+
+.copyright__link:hover path {
+  fill: @deepblue;
+  transition: 0.5s;
+}
+
+.copyright__link:active path {
+  fill: fade(@deepblue, 30%);
+  transition: 0.5s;
+}
+
 .copyright__text {
+  display: inline-block;
   .os();
   color: @deepblue;
   font-size: 14px;
+  margin: 6px 0 0 0;
+
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    display: inline-block;
     margin: 6px 0 0 0;
+    font-weight: 900;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
+    font-weight: 900;
     margin: 6px 0 0 0;
   }
 }
 
-.copyright__link {
+.copyright__icon {
+  position: absolute;
+  top: -2px;
+  right: 0;
   display: inline-block;
   height: 34px;
-  margin: 0 0 0 11px;
+  margin: 0 0 0 0;
 }

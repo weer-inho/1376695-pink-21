@@ -14,14 +14,6 @@
   margin-top: 20px;
 }
 
-.slider-items__btn:hover {
-  background-color: #7e868f;
-}
-
-.slider-items__btn:active {
-  opacity: 0.3;
-}
-
 @media (min-width: @tablet-width) {
   .slider-items--none {
     display: none;
@@ -49,6 +41,16 @@
   background-color: #bec2c7;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.slider-items__btn:hover {
+  background-color: #7e868f;
+  transition: 0.2s;
+}
+
+.slider-items__btn:active {
+  background-color: #eaebed;
+  transition: 0.2s;
 }
 
 .slider-items__btn:first-child {

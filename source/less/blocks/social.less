@@ -8,7 +8,22 @@
   display: inline-block;
   width: 53px;
   height: 53px;
-  border: 3px solid #e5e5e5;
+  border: 3px solid fade(@deepblue, 10%);
   border-radius: 50%;
   padding: 17px 0 0 0;
+}
+
+.social__link:hover {
+  border: 3px solid @deepblue;
+  transition: 0.2s;
+}
+
+.social__link:active {
+  border: 3px solid fade(@deepblue, 10%);
+  transition: 0.2s;
+}
+
+.social__link:active path {
+  opacity: 0.3;
+  transition: 0.2s;
 }

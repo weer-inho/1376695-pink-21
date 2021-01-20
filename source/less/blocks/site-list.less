@@ -13,6 +13,18 @@
   text-align: center;
 }
 
+.site-list__item--active .site-list__link-text::after {
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -19px;
+    left: 0;
+    background-color: @white;
+  }
+}
+
 .site-list__link {
   display: inline-block;
   height: 64px;
@@ -32,7 +44,23 @@
   }
 }
 
+.site-list__link:hover .site-list__link-text {
+  color: @deepred;
+  transition: 0.5s;
+}
+
+.site-list__link:active .site-list__link-text {
+  color: fade(@deepred, 30%);
+  transition: 0.5s;
+
+  @media (min-width: @desktop-width) {
+    color: inherit;
+    opacity: 0.3;
+  }
+}
+
 .site-list__link-text {
+  position: relative;
   display: inline-block;
   margin-top: 18px;
   font-size: 18px;

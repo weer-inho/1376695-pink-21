@@ -46,6 +46,32 @@
   color: @deepbluelight;
 }
 
+.editor__button--post:hover {
+  background-color: @deepred;
+  color: @white;
+  transition: 0.2s;
+}
+
+.editor__button--post:active {
+  outline: 0;
+  background-color: @deepred;
+  color: fade(@white, 30%);
+  transition: 0.2s;
+}
+
+.editor__button--cancel:hover {
+  color: fade(@deepblue, 30%);
+  border-color: fade(@deepblue, 30%);
+  transition: 0.2s;
+}
+
+.editor__button--cancel:active {
+  outline: 0;
+  background-color: fade(@deepblue, 30%);
+  color: fade(@white, 30%);
+  transition: 0.2s;
+}
+
 .editor__container {
   display: grid;
   width: 280px;
@@ -185,15 +211,15 @@
   }
 }
 
-.editor__button-window svg path {
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    fill: @deepred;
-  }
+// .editor__button-window svg path {
+//   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+//     fill: @deepred;
+//   }
 
-  @media (min-width: @desktop-width) {
-    fill: @deepred;
-  }
-}
+//   @media (min-width: @desktop-width) {
+//     fill: @deepred;
+//   }
+// }
 
 .editor__scroll-bar {
   position: absolute;
@@ -259,6 +285,15 @@
     width: 44px;
     height: 44px;
   }
+}
+
+.editor__button-window:hover path {
+  fill: #8d949c;
+}
+
+.editor__button-window--active path {
+  fill: @deepred;
+  opacity: 1;
 }
 
 .editor__button-window::before {
@@ -327,4 +362,8 @@
   @media (min-width: @desktop-width) {
     right: -222px;
   }
+}
+
+.editor__button-window--active::after {
+  background-color: @deepred;
 }

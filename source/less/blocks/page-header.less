@@ -96,3 +96,49 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
 }
+
+.page-header__logo-mobile {
+  display: inline;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    display: inline;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-desktop {
+  display: none;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+  }
+}
+
+.page-header__logo:hover path {
+  fill: @deepred;
+  transition: 0.2s;
+}
+
+.page-header__logo:active path {
+  fill: fade(@white, 30%);
+  transition: 0.2s;
+}

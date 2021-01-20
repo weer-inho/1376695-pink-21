@@ -21,8 +21,8 @@ const styles = () => {
     .pipe(less())
     .pipe(postcss([ autoprefixer() ]))
     .pipe(sourcemap.write("."))
-    .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"))
+    .pipe(rename("style.css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(sync.stream());
 }
 
@@ -102,7 +102,7 @@ exports.html = html;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: 'source'
     },
     cors: true,
     notify: false,
