@@ -1,5 +1,5 @@
 .general__text-wrapper {
-  min-height: 251px;
+  min-height: 216px;
   padding: 42px 0 0;
   text-align: center;
 
@@ -47,9 +47,19 @@
   }
 }
 
+.general__text:last-child {
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 0;
+  }
+}
+
 .general__list-wrapper {
+  background-image: url("../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     background-color: #f2f2f2;
+    background-position: -520px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -57,18 +67,22 @@
     width: 100%;
     margin: 0 auto;
     background-color: #f2f2f2;
+    background-size: 1961px auto;
+    background-position: 0 -1px;
   }
 }
 
 .general__list-container {
   background-color: #f2f2f2;
-  min-height: 751px;
-  padding: 29px 20px 0;
+  min-height: 786px;
+  padding: 64px 20px 0;
   text-align: center;
-  background-image: url("../../img/phone hello mobile.png");
+  background-image:
+    url("../../img/phone hello mobile.png"),
+    url("../../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
-  background-position: center 475px;
-  background-size: 157px 320px;
+  background-position: center 509px, 0 0;
+  background-size: 157px 320px, contain;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/phone hello mobile@2x.png");
@@ -78,6 +92,8 @@
     width: 660px;
     min-height: 487px;
     margin: 0 auto;
+    padding: 29px 20px 0;
+    background-color: transparent;
     background-image: url("../../img/phone hello tablet.png");
     background-repeat: no-repeat;
     background-size: 268px 547px;
@@ -94,6 +110,7 @@
     margin: 0 auto;
     padding: 28px 0 0 25px;
     background-image: none;
+    background-color: transparent;
   }
 }
 

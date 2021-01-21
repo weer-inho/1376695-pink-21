@@ -1,20 +1,47 @@
 .modal {
+  position: fixed;
+  top: 5%;
+  left: 50%;
   .os();
   width: 320px;
   text-align: center;
   display: none;
+  padding: 49px 5px 5px;
+  background-color: @white;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.7);
 }
 
 .modal__title {
   .osbold();
   font-size: 18px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    font-size: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+  }
 }
 
 .modal__description {
+  display: inline-block;
   font-size: 14px;
+  margin: auto 30px;
+
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    width: 380px;
+  }
 }
 
 .modal__button {
+  display: inline-block;
   width: 276px;
   height: 59px;
   background-color: @green;
@@ -23,12 +50,42 @@
   font-size: 18px;
   color: @white;
   text-transform: uppercase;
+  margin-top: 30px;
 }
 
 .modal--failure {
+  width: 320px;
   height: 289px;
+  margin-left: -160px;
+  // display: block;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 460px;
+    height: 363px;
+    margin-left: -230px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+    height: 377px;
+    margin-left: -390px;
+  }
 }
 
 .modal--success {
+  width: 320px;
   height: 380px;
+  margin-left: -160px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 460px;
+    height: 432px;
+    margin-left: -216px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+    height: 377px;
+    margin-left: -390px;
+  }
 }

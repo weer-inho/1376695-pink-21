@@ -1,17 +1,30 @@
 .rates {
   position: relative;
-  min-height: 461px;
+  min-height: 481px;
   background-color: #f2f2f2;
-  padding: 82px 0 0;
+  padding: 101px 0 0;
+  background-image: url("../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: center -13px;
+  background-size: 600px auto;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     padding: 97px 0 0 0;
     min-height: 387px;
+    background-image: url("../../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-position: center -23px;
+    background-size: 1200px auto;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 57px 0 0 0;
-    min-height: 434px;
+    overflow: visible;
+    padding: 157px 0 0 0;
+    min-height: 534px;
+    background-image: url("../../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 1200px auto;
   }
 }
 
@@ -139,6 +152,18 @@
   background-color: #d22856;
   transform: rotate(-45deg);
   z-index: 10;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    height: 10px;
+    width: 28px;
+    top: 20px;
+    left: 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 23px;
+    left: 13px;
+  }
 }
 
 .rates__hit {
@@ -150,6 +175,16 @@
   display: block;
   top: 0;
   left: -2px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    top: -12px;
+    left: -2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 2px;
+    left: -2px;
+  }
 }
 
 .rates__value p {
@@ -182,6 +217,7 @@
     font-size: 18px;
     height: 61px;
     padding: 0 0 0 21px;
+    text-transform: none;
   }
 }
 
@@ -208,12 +244,23 @@
     background-color: #f2f2f2;
     border: none;
   }
+
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
+    border: none;
+  }
 }
 
-@media (min-width: @tablet-width) and (max-width: @desktop-width) {
-  .rates__field--cancel,
-  .rates__field--none,
-  .rates__field--ok {
+
+.rates__field--cancel,
+.rates__field--none,
+.rates__field--ok {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    font-size: 0;
+    line-height: 0;
+  }
+
+  @media (min-width: @desktop-width) {
     font-size: 0;
     line-height: 0;
   }

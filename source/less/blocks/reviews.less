@@ -1,12 +1,12 @@
 .reviews {
-  padding: 20px 0 54px;
+  padding: 20px 0 34px;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     padding: 77px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 74px 0 14px 0;
+    padding: 74px 0 0 0;
   }
 }
 
@@ -21,7 +21,7 @@
   @media (min-width: @desktop-width) {
     width: 940px;
     padding-top: 95px;
-    padding-bottom: 59px;
+    // padding-bottom: 59px;
     background-image: url("../../img/icon-quotes.svg");
     background-size: 80px 63px;
     background-repeat: no-repeat;
@@ -40,6 +40,7 @@
 
   @media (min-width: @desktop-width) {
     position: relative;
+    margin-bottom: -27px;
   }
 }
 
@@ -57,6 +58,13 @@
   opacity: 1;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: column;
     visibility: visible;
@@ -94,10 +102,20 @@
     visibility: hidden;
     opacity: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
-@media (min-width: @tablet-width) and (max-width: @desktop-width) {
-  .reviews__inner-wrapper {
+.reviews__inner-wrapper {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
     order: 1;
   }
 }
@@ -135,7 +153,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 0;
+    margin: 22px 0 0;
     font-size: 24px;
     line-height: 30px;
   }
@@ -153,6 +171,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    font-size: 18px;
+    order: 0;
     padding: 0 95px;
   }
 }

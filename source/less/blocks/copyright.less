@@ -4,6 +4,10 @@
   width: 130px;
   height: 34px;
   text-align: left;
+
+  @media (min-width: @desktop-width) {
+    width: 153px;
+  }
 }
 
 .copyright__link:hover path {
@@ -32,7 +36,8 @@
   @media (min-width: @desktop-width) {
     font-size: 18px;
     font-weight: 900;
-    margin: 6px 0 0 0;
+    margin: 6px auto 0 0;
+    width: 113px;
   }
 }
 
@@ -43,4 +48,14 @@
   display: inline-block;
   height: 34px;
   margin: 0 0 0 0;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    top: -1px;
+    right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 3px;
+    right: 0;
+  }
 }
