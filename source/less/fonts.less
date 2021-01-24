@@ -1,18 +1,3 @@
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
@@ -37,23 +22,6 @@ input[type="radio"].visually-hidden {
   font-display: swap;
 }
 
-// colors
-
-@deepblue: #283645;
-@white: #ffffff;
-@black: #000000;
-@deepred: #D22856;
-@green: #2AAB6D;
-@deepbluelight: rgba(40, 54, 69, 0.1);
-
-// viewports
-
-@tablet-width: 660px;
-@desktop-width: 1200px;
-@mobile-width-only: 659px;
-
-// fonts
-
 .os() {
   font-family: "Open Sans", "Arial", serif;
 }
@@ -64,34 +32,4 @@ input[type="radio"].visually-hidden {
 
 .osbold() {
   font-family: "Open Sans Bold", "Arial", serif;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-fieldset {
-  margin: 0;
-  padding: 0;
-}
-
-picture {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-article {
-  margin: 0;
-  padding: 0;
 }
