@@ -28,6 +28,7 @@
 .info__questions {
   .oslight();
   font-size: 24px;
+  font-weight: 400;
   text-align: center;
   line-height: 120%;
   margin: 0 0 0 0;
@@ -43,6 +44,11 @@
 
   @media (min-width: @desktop-width) {
     font-size: 50px;
+    line-height: 131%;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
 }
 
@@ -76,6 +82,13 @@
 
   @media (min-width: @desktop-width) {
     margin: 20px 0 0 0;
+  }
+}
+
+.info__guest-text {
+  @media (min-width: @desktop-width) {
+    width: 211px;
+    margin: 20px auto 0;
   }
 }
 

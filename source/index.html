@@ -9,224 +9,438 @@
   <body class="page">
 
     <svg version="1.1" style="display: none">
-      <symbol id="icon-yes"><path d="M30.6.4a1.5 1.5 0 00-1.1-.4 1.6 1.6 0 00-1.1.4l-18 17.1-7.8-7.4a1.6 1.6 0 00-2.2 0c-.2.3-.4.7-.4 1 0 .4.1.8.4 1l8.9 8.5a1.5 1.5 0 001 .4c.5 0 .9-.2 1.2-.4l19-18.1c.3-.3.5-.7.5-1 0-.4-.2-.8-.4-1z" fill="#3DC644"/></symbol>
-      <symbol id="icon-no"><path d="M15.6 13.5l11-11A1.5 1.5 0 0025.5 0c-.4 0-.8.2-1 .4l-11 11-11-11A1.5 1.5 0 000 1.5c0 .4.2.8.4 1l11 11-11 11a1.5 1.5 0 000 2 1.5 1.5 0 002.2 0l11-10.9 10.8 11a1.5 1.5 0 002 .1 1.5 1.5 0 00.2-2.3l-11-10.9z" fill="#F25B26"/></symbol>
-      <symbol viewBox="0 0 21.706 41.719" id="icon-arrow-right"><path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/></symbol>
-      <symbol viewBox="0 0 21.706 41.719" id="icon-arrow-left"><path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/></symbol>
-      <symbol id="hit_ribbon"><path d="M74 0L37 37 0 74V41L41 0h33z" fill="#D22856"/></symbol>
-      <symbol id="hit_ribbon-small"><path d="M74 0L37 37 0 74V41L41 0h33z" fill="#D22856"/></symbol>
-      <symbol id="htmlacademy"><path d="M13.6 0h-.1L0 1.4V26l13.5 8L27 26V1.4L13.6 0zm11.6 25l-11.7 7-11.7-7V15l11.7 6.8v1.3l-8-4.7v1.2l8 4.8v1.3l-8-4.8v1.2l8 4.9 8.1-4.9V17l3.6-2.1V25zm0-11.5L22 15.3l-1.5 1-7-4.3v1.2l6 3.6-.2.1-.8.5-5-3v1.3l3.9 2.3-1 .6-3-1.7v1.2l2 1.2-2 1.1-11.6-6.8 11.6-7 11.8 6.9zm0-1.3L13.4 5.3l-11.6 7V3l11.7-1.2L25.2 3v9.2z" fill="#D22856"/></symbol>
-      <symbol id="pink"><path d="M0 1.5A1.3 1.3 0 011.3.3h7c5.1 0 8.5 2.7 8.5 7v.2c0 4.8-4 7.3-8.8 7.3H2.5v6.8A1.3 1.3 0 011.3 23 1.3 1.3 0 010 21.6v-20zm8 11c3.8 0 6.2-2 6.2-5 0-3.2-2.4-4.9-6-4.9H2.7v9.9H8zM21.6 1.4A1.3 1.3 0 0122.9 0 1.3 1.3 0 0124 1.4v20.2A1.3 1.3 0 0123 23a1.3 1.3 0 01-1.3-1.4V1.4zM30.7 1.4A1.3 1.3 0 0131.9.2h.4a1.5 1.5 0 011.3.7l13.6 17.4v-17A1.2 1.2 0 0148.4.2a1.2 1.2 0 011.2 1.3v20.3a1.1 1.1 0 01-1.1 1.1h-.2A1.7 1.7 0 0147 22L33.1 4.2v17.5a1.3 1.3 0 01-1.2 1.2 1.2 1.2 0 01-1.2-1.2V1.4zM56 1.4A1.3 1.3 0 0157.1 0a1.3 1.3 0 011.3 1.4v12.3L71.2.6c.3-.3.6-.5 1-.5a1.3 1.3 0 011.2 1.3 1.3 1.3 0 01-.4.9l-8 7.9 8.7 10.5c.2.2.3.6.3 1a1.3 1.3 0 01-1.3 1.2 1.2 1.2 0 01-1-.6L63.3 12l-4.8 4.8v4.9a1.3 1.3 0 01-1.3 1.3 1.3 1.3 0 01-1.3-1.3V1.4z" fill="#fff"/></symbol>
-      <symbol id="twitter"><path d="M11.6.2c.6-.2 1.4-.3 2 0 .8.1 1.4.5 1.8 1l2.1-.6c0 .3 0 .6-.2 1l-.7.7a1.8 1.8 0 001.4-.5 3 3 0 01-1.7 1.9C16.1 10 13 14.2 5.7 14H5c-.4 0-4.4-.4-5.1-1.8 1.8.3 3.5-.1 5-1-1-.3-2.9-.5-3.2-2.8.4.1.8.2 1.2 0C1.8 7.8.3 7 .4 5c.4.3 1 .5 1.4.4-.7-.2-2-3-.9-4.6 2 1.7 4 3.4 7.6 3.5.2-2 1.2-3.5 3-4.1z" fill="#D22856"/></symbol>
-      <symbol id="facebook"><path d="M6.5 3.2H9V0H6C2.8.2 1.6 2.3 2 5.8H0v3.4h2V18h4V9.2h3V5.8H6c0-1 0-2.3.5-2.6z" fill="#D22856"/></symbol>
-      <symbol id="youtube"><path d="M1.8 12.8a1.2 1.2 0 01-1.3 0l-.4-.4a1 1 0 010-.6V.6L.5.2a1.3 1.3 0 011.3 0l12.4 5.5c1 .4 1 1.2 0 1.6L1.8 12.8z" fill="#D22856"/></symbol>
+      <symbol id="icon-yes">
+        <path d="M30.6.4a1.5 1.5 0 00-1.1-.4 1.6 1.6 0 00-1.1.4l-18 17.1-7.8-7.4a1.6 1.6 0 00-2.2 0c-.2.3-.4.7-.4 1 0 .4.1.8.4 1l8.9 8.5a1.5 1.5 0 001 .4c.5 0 .9-.2 1.2-.4l19-18.1c.3-.3.5-.7.5-1 0-.4-.2-.8-.4-1z" fill="#3DC644"/>
+      </symbol>
+      <symbol id="icon-no">
+        <path d="M15.6 13.5l11-11A1.5 1.5 0 0025.5 0c-.4 0-.8.2-1 .4l-11 11-11-11A1.5 1.5 0 000 1.5c0 .4.2.8.4 1l11 11-11 11a1.5 1.5 0 000 2 1.5 1.5 0 002.2 0l11-10.9 10.8 11a1.5 1.5 0 002 .1 1.5 1.5 0 00.2-2.3l-11-10.9z" fill="#F25B26"/>
+      </symbol>
+      <symbol viewBox="0 0 21.706 41.719" id="icon-arrow-right">
+        <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+      </symbol>
+      <symbol viewBox="0 0 21.706 41.719" id="icon-arrow-left">
+        <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+      </symbol>
+      <symbol id="hit_ribbon">
+        <path d="M74 0L37 37 0 74V41L41 0h33z" fill="#D22856"/>
+      </symbol>
+      <symbol id="hit_ribbon-small">
+        <path d="M74 0L37 37 0 74V41L41 0h33z" fill="#D22856"/>
+      </symbol>
+      <symbol id="htmlacademy">
+        <path d="M13.6 0h-.1L0 1.4V26l13.5 8L27 26V1.4L13.6 0zm11.6 25l-11.7 7-11.7-7V15l11.7 6.8v1.3l-8-4.7v1.2l8 4.8v1.3l-8-4.8v1.2l8 4.9 8.1-4.9V17l3.6-2.1V25zm0-11.5L22 15.3l-1.5 1-7-4.3v1.2l6 3.6-.2.1-.8.5-5-3v1.3l3.9 2.3-1 .6-3-1.7v1.2l2 1.2-2 1.1-11.6-6.8 11.6-7 11.8 6.9zm0-1.3L13.4 5.3l-11.6 7V3l11.7-1.2L25.2 3v9.2z" fill="#D22856"/>
+      </symbol>
+      <symbol id="pink">
+        <path d="M0 1.5A1.3 1.3 0 011.3.3h7c5.1 0 8.5 2.7 8.5 7v.2c0 4.8-4 7.3-8.8 7.3H2.5v6.8A1.3 1.3 0 011.3 23 1.3 1.3 0 010 21.6v-20zm8 11c3.8 0 6.2-2 6.2-5 0-3.2-2.4-4.9-6-4.9H2.7v9.9H8zM21.6 1.4A1.3 1.3 0 0122.9 0 1.3 1.3 0 0124 1.4v20.2A1.3 1.3 0 0123 23a1.3 1.3 0 01-1.3-1.4V1.4zM30.7 1.4A1.3 1.3 0 0131.9.2h.4a1.5 1.5 0 011.3.7l13.6 17.4v-17A1.2 1.2 0 0148.4.2a1.2 1.2 0 011.2 1.3v20.3a1.1 1.1 0 01-1.1 1.1h-.2A1.7 1.7 0 0147 22L33.1 4.2v17.5a1.3 1.3 0 01-1.2 1.2 1.2 1.2 0 01-1.2-1.2V1.4zM56 1.4A1.3 1.3 0 0157.1 0a1.3 1.3 0 011.3 1.4v12.3L71.2.6c.3-.3.6-.5 1-.5a1.3 1.3 0 011.2 1.3 1.3 1.3 0 01-.4.9l-8 7.9 8.7 10.5c.2.2.3.6.3 1a1.3 1.3 0 01-1.3 1.2 1.2 1.2 0 01-1-.6L63.3 12l-4.8 4.8v4.9a1.3 1.3 0 01-1.3 1.3 1.3 1.3 0 01-1.3-1.3V1.4z" fill="#fff"/>
+      </symbol>
+      <symbol id="twitter">
+        <path d="M11.6.2c.6-.2 1.4-.3 2 0 .8.1 1.4.5 1.8 1l2.1-.6c0 .3 0 .6-.2 1l-.7.7a1.8 1.8 0 001.4-.5 3 3 0 01-1.7 1.9C16.1 10 13 14.2 5.7 14H5c-.4 0-4.4-.4-5.1-1.8 1.8.3 3.5-.1 5-1-1-.3-2.9-.5-3.2-2.8.4.1.8.2 1.2 0C1.8 7.8.3 7 .4 5c.4.3 1 .5 1.4.4-.7-.2-2-3-.9-4.6 2 1.7 4 3.4 7.6 3.5.2-2 1.2-3.5 3-4.1z" fill="#D22856"/>
+      </symbol>
+      <symbol id="facebook">
+        <path d="M6.5 3.2H9V0H6C2.8.2 1.6 2.3 2 5.8H0v3.4h2V18h4V9.2h3V5.8H6c0-1 0-2.3.5-2.6z" fill="#D22856"/>
+      </symbol>
+      <symbol id="youtube">
+        <path d="M1.8 12.8a1.2 1.2 0 01-1.3 0l-.4-.4a1 1 0 010-.6V.6L.5.2a1.3 1.3 0 011.3 0l12.4 5.5c1 .4 1 1.2 0 1.6L1.8 12.8z" fill="#D22856"/>
+      </symbol>
     </svg>
 
-    <header class="page-header">
+    <header class="page-header page-header--nonindex page-header--small">
       <div class="page-header__container">
         <div class="page-header__wrapper">
           <div class="page-header__logo-wrapper">
-            <a class="page-header__logo">
+            <a class="page-header__logo" href="index.html">
               <svg class="page-header__logo-mobile" width="75" height="22">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pink"></use>
+                <use class="logotype-white-mobile" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pink"></use>
               </svg>
               <svg class="page-header__logo-tablet" width="148" height="40">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M53.9 6.6l5 21.1a1.4 1.4 0 01-.7 1.7l-.7.2h-4A11.6 11.6 0 0142 39.9c-5.9 0-10.8-4.5-11.5-10.3h-2A11.8 11.8 0 0117 40c-6 0-11-4.6-11.6-10.5h-4A1.4 1.4 0 01.4 29a1.4 1.4 0 01-.2-1.3L5 6.6A8 8 0 0113.5 0c.4 0 .7.2 1 .4a1.5 1.5 0 010 2.1c-.3.3-.6.5-1 .5C8.8 3 8 6.7 8 7L3.3 26.7h2C6.2 20.8 11 16.3 17 16.3c6 0 10.8 4.5 11.6 10.3h2c.7-5.7 5.6-10.2 11.4-10.2 6 0 10.8 4.5 11.5 10.2h2.1L51 7c0-.4-.8-4.1-5.5-4.1-.4 0-.7-.2-1-.5a1.5 1.5 0 010-2c.3-.3.6-.5 1-.5A8 8 0 0154 6.6zm-28.2 23a9.1 9.1 0 000-3 8.9 8.9 0 00-8.7-7.4 8.9 8.9 0 00-8.7 10.3 8.9 8.9 0 008.7 7.6c4.4 0 8-3.3 8.7-7.5zm25 0V28c0-4.8-3.9-8.8-8.7-8.8a8.8 8.8 0 00-8.6 10.3A8.7 8.7 0 0042 37c4.4 0 8-3.2 8.6-7.4z" fill="#fff"/><path d="M71 18.5a1.3 1.3 0 011.3-1.2h7c5.1 0 8.5 2.7 8.5 7v.2c0 4.8-4 7.3-8.8 7.3h-5.5v6.8a1.3 1.3 0 01-1.2 1.4 1.3 1.3 0 01-1.3-1.4v-20zm8 11c3.8 0 6.2-2 6.2-5 0-3.2-2.4-4.9-6-4.9h-5.6v9.9H79zM92.6 18.4a1.3 1.3 0 011.3-1.4 1.3 1.3 0 011.2 1.4v20.2A1.3 1.3 0 0194 40a1.3 1.3 0 01-1.3-1.4V18.4zM101.7 18.4a1.3 1.3 0 011.2-1.2h.4a1.5 1.5 0 011.3.7l13.6 17.4v-17a1.2 1.2 0 011.2-1.2 1.2 1.2 0 011.2 1.3v20.3a1.2 1.2 0 01-.3.8 1.1 1.1 0 01-.8.3h-.2a1.7 1.7 0 01-1.3-.8l-13.9-17.8v17.5a1.3 1.3 0 01-1.2 1.2 1.2 1.2 0 01-1.2-1.2V18.4zM127 18.4a1.3 1.3 0 011.2-1.4 1.3 1.3 0 011.3 1.4v12.3l12.7-13.1c.3-.3.6-.5 1-.5a1.3 1.3 0 011.2 1.3 1.3 1.3 0 01-.4.9l-8 7.9 8.7 10.5c.2.2.3.6.3 1a1.3 1.3 0 01-.4.8 1.3 1.3 0 01-1 .4 1.2 1.2 0 01-1-.6L134.4 29l-4.8 4.8v4.9a1.3 1.3 0 01-.8 1.2 1.3 1.3 0 01-1.8-1.2V18.4z" fill="#fff"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M53.9 6.6l5 21.1a1.4 1.4 0 01-.7 1.7l-.7.2h-4A11.6 11.6 0 0142 39.9c-5.9 0-10.8-4.5-11.5-10.3h-2A11.8 11.8 0 0117 40c-6 0-11-4.6-11.6-10.5h-4A1.4 1.4 0 01.4 29a1.4 1.4 0 01-.2-1.3L5 6.6A8 8 0 0113.5 0c.4 0 .7.2 1 .4a1.5 1.5 0 010 2.1c-.3.3-.6.5-1 .5C8.8 3 8 6.7 8 7L3.3 26.7h2C6.2 20.8 11 16.3 17 16.3c6 0 10.8 4.5 11.6 10.3h2c.7-5.7 5.6-10.2 11.4-10.2 6 0 10.8 4.5 11.5 10.2h2.1L51 7c0-.4-.8-4.1-5.5-4.1-.4 0-.7-.2-1-.5a1.5 1.5 0 010-2c.3-.3.6-.5 1-.5A8 8 0 0154 6.6zm-28.2 23a9.1 9.1 0 000-3 8.9 8.9 0 00-8.7-7.4 8.9 8.9 0 00-8.7 10.3 8.9 8.9 0 008.7 7.6c4.4 0 8-3.3 8.7-7.5zm25 0V28c0-4.8-3.9-8.8-8.7-8.8a8.8 8.8 0 00-8.6 10.3A8.7 8.7 0 0042 37c4.4 0 8-3.2 8.6-7.4z" fill="#fff"/>
+                <path d="M71 18.5a1.3 1.3 0 011.3-1.2h7c5.1 0 8.5 2.7 8.5 7v.2c0 4.8-4 7.3-8.8 7.3h-5.5v6.8a1.3 1.3 0 01-1.2 1.4 1.3 1.3 0 01-1.3-1.4v-20zm8 11c3.8 0 6.2-2 6.2-5 0-3.2-2.4-4.9-6-4.9h-5.6v9.9H79zM92.6 18.4a1.3 1.3 0 011.3-1.4 1.3 1.3 0 011.2 1.4v20.2A1.3 1.3 0 0194 40a1.3 1.3 0 01-1.3-1.4V18.4zM101.7 18.4a1.3 1.3 0 011.2-1.2h.4a1.5 1.5 0 011.3.7l13.6 17.4v-17a1.2 1.2 0 011.2-1.2 1.2 1.2 0 011.2 1.3v20.3a1.2 1.2 0 01-.3.8 1.1 1.1 0 01-.8.3h-.2a1.7 1.7 0 01-1.3-.8l-13.9-17.8v17.5a1.3 1.3 0 01-1.2 1.2 1.2 1.2 0 01-1.2-1.2V18.4zM127 18.4a1.3 1.3 0 011.2-1.4 1.3 1.3 0 011.3 1.4v12.3l12.7-13.1c.3-.3.6-.5 1-.5a1.3 1.3 0 011.2 1.3 1.3 1.3 0 01-.4.9l-8 7.9 8.7 10.5c.2.2.3.6.3 1a1.3 1.3 0 01-.4.8 1.3 1.3 0 01-1 .4 1.2 1.2 0 01-1-.6L134.4 29l-4.8 4.8v4.9a1.3 1.3 0 01-.8 1.2 1.3 1.3 0 01-1.8-1.2V18.4z" fill="#fff"/>
               </svg>
               <svg class="page-header__logo-desktop" width="148" height="40">
-                <path d="M72.2 18.4c0-.3.1-.6.4-.9.2-.2.5-.3.9-.3h7.2c5 0 8.4 2.6 8.4 7 0 4.9-4 7.4-8.9 7.4h-5.4v6.7a1.2 1.2 0 01-.4 1 1.3 1.3 0 01-1.4.3 1.3 1.3 0 01-.7-.8l-.1-.5V18.4zm8.1 10.9c3.8 0 6.3-2 6.3-5 0-3.2-2.5-4.8-6-4.8h-5.8v9.7h5.5zM94 18.3a1.2 1.2 0 01.4-1 1.3 1.3 0 011.4-.3 1.3 1.3 0 01.7.8v20.5a1.2 1.2 0 01-.3 1 1.3 1.3 0 01-.9.4 1.3 1.3 0 01-1-.4 1.3 1.3 0 01-.3-1v-20zM103.2 18.3c0-.3.1-.6.4-.9.2-.2.5-.3.9-.3h.3a1.6 1.6 0 011.3.7L120 35V18.2c0-.3 0-.6.3-.8a1.3 1.3 0 011.8 0c.2.2.4.5.4.8v20.1a1 1 0 01-.4.9 1.1 1.1 0 01-.8.3h-.1a1.7 1.7 0 01-1.4-.8l-14-17.6v17.2c0 .3-.2.7-.4.9l-.8.4c-.4 0-.7-.2-1-.4-.1-.2-.3-.5-.3-.9v-20zM128.7 18.3a1.2 1.2 0 01.4-1 1.3 1.3 0 011-.4 1.3 1.3 0 01.9.4 1.3 1.3 0 01.3 1v12.1l12.9-13c.3-.2.6-.4 1-.4.3 0 .6.1.9.4.2.2.3.5.3.8a1.3 1.3 0 01-.4 1l-8 7.7 8.6 10.5c.3.2.4.6.4.9a1.3 1.3 0 01-.4 1 1.3 1.3 0 01-1 .3 1.3 1.3 0 01-1-.6l-8.4-10.4-4.9 4.8v4.9a1.2 1.2 0 01-.8 1.1 1.3 1.3 0 01-1.7-.6V18.3z" fill="#fff"/><path d="M99 9.7c-1 0-2-.3-2.6-1-.7-.7-1.1-1.6-1.1-2.5 0 1-.4 1.8-1 2.5-.8.7-1.7 1-2.6 1 1 0 1.8.4 2.5 1.1.7.7 1 1.6 1 2.5.1-1 .5-1.8 1.2-2.5.6-.7 1.6-1 2.5-1z" fill="#D22856"/><path d="M43.3 19h.7A2.5 2.5 0 0042 18a2 2 0 01-2-1.4l-2 .8h.2c.5 0 1 .2 1.4.6.4.4.6.9.6 1.4v.3a9 9 0 013.2-.5z" fill="#fff"/><path d="M60.7 27.6l-5.2-21C55.2 4.2 53 0 47 0c-.4 0-.8.2-1 .4a1.5 1.5 0 000 2.1c.2.3.6.5 1 .5 4.9 0 5.6 3.6 5.7 4l4.7 19.5h-2a11.7 11.7 0 00-5.4-8.4 2.5 2.5 0 00-1.5 2.3v.2a9.1 9.1 0 014 7.4l-.1 1.5c-.4 2-1.4 4-3 5.4a9.1 9.1 0 01-11.9 0 8.8 8.8 0 01-3.1-7 9 9 0 011-3.9 2 2 0 01-1.4-.6 2 2 0 01-.6-1.3l-.1-.5c-1 1.5-1.6 3.2-1.8 5h-2c-.2-3-1.6-5.7-3.8-7.6a12.2 12.2 0 00-16.1 0c-2.3 2-3.7 4.6-4 7.5h-2L8.1 7.1C8.2 6.6 9 3 14 3c.4 0 .8-.2 1-.5a1.5 1.5 0 000-2c-.2-.3-.6-.5-1-.5-6 0-8.3 4.2-8.6 6.6L0 27.6A1.4 1.4 0 00.3 29a1.4 1.4 0 001.2.5h4c0 .7.2 1.3.4 1.9v-.4c0-.5.3-1 .7-1.4a2 2 0 011.9-.5 8.8 8.8 0 013-8 9.1 9.1 0 0111.9 0 8.8 8.8 0 013.2 7c0 2.3-1 4.6-2.7 6.2a9.2 9.2 0 01-11.8 1 2 2 0 01-1.3.4l-.6.2-.2.6c0 .2 0 .5-.2.8a12.2 12.2 0 0015.7-.2c2.2-2 3.6-4.6 4-7.5h1.8a12.2 12.2 0 0020 7.5c2.2-2 3.6-4.6 4-7.5h4a1.4 1.4 0 001.2-.6 1.4 1.4 0 00.2-1.3z" fill="#fff"/><path d="M51 16a4.6 4.6 0 01-4.3-2.8c-.2-.6-.3-1.1-.3-1.7 0 1.2-.5 2.3-1.3 3.1-.9.9-2 1.3-3.2 1.3 1.2 0 2.3.5 3.2 1.3.8.9 1.3 2 1.3 3.2 0-1.2.5-2.3 1.3-3.2.9-.8 2-1.3 3.2-1.3zM38 19.4c-.7 0-1.4-.3-1.9-.8s-.8-1.2-.8-2c0 .8-.3 1.5-.8 2s-1.2.8-2 .8c.8 0 1.5.3 2 .8s.8 1.2.8 1.9c0-.7.3-1.4.8-2 .5-.4 1.2-.7 2-.7zM10.8 33.6c-.7 0-1.4-.3-2-.8-.5-.5-.8-1.2-.8-1.9 0 .7-.2 1.4-.8 2-.5.5-1.2.7-2 .7.8 0 1.5.3 2 .8.6.5.8 1.2.8 2 0-.8.3-1.4.8-2 .6-.5 1.3-.8 2-.8z" fill="#D22856"/>
+                <path d="M72.2 18.4c0-.3.1-.6.4-.9.2-.2.5-.3.9-.3h7.2c5 0 8.4 2.6 8.4 7 0 4.9-4 7.4-8.9 7.4h-5.4v6.7a1.2 1.2 0 01-.4 1 1.3 1.3 0 01-1.4.3 1.3 1.3 0 01-.7-.8l-.1-.5V18.4zm8.1 10.9c3.8 0 6.3-2 6.3-5 0-3.2-2.5-4.8-6-4.8h-5.8v9.7h5.5zM94 18.3a1.2 1.2 0 01.4-1 1.3 1.3 0 011.4-.3 1.3 1.3 0 01.7.8v20.5a1.2 1.2 0 01-.3 1 1.3 1.3 0 01-.9.4 1.3 1.3 0 01-1-.4 1.3 1.3 0 01-.3-1v-20zM103.2 18.3c0-.3.1-.6.4-.9.2-.2.5-.3.9-.3h.3a1.6 1.6 0 011.3.7L120 35V18.2c0-.3 0-.6.3-.8a1.3 1.3 0 011.8 0c.2.2.4.5.4.8v20.1a1 1 0 01-.4.9 1.1 1.1 0 01-.8.3h-.1a1.7 1.7 0 01-1.4-.8l-14-17.6v17.2c0 .3-.2.7-.4.9l-.8.4c-.4 0-.7-.2-1-.4-.1-.2-.3-.5-.3-.9v-20zM128.7 18.3a1.2 1.2 0 01.4-1 1.3 1.3 0 011-.4 1.3 1.3 0 01.9.4 1.3 1.3 0 01.3 1v12.1l12.9-13c.3-.2.6-.4 1-.4.3 0 .6.1.9.4.2.2.3.5.3.8a1.3 1.3 0 01-.4 1l-8 7.7 8.6 10.5c.3.2.4.6.4.9a1.3 1.3 0 01-.4 1 1.3 1.3 0 01-1 .3 1.3 1.3 0 01-1-.6l-8.4-10.4-4.9 4.8v4.9a1.2 1.2 0 01-.8 1.1 1.3 1.3 0 01-1.7-.6V18.3z" fill="#fff"/>
+                <path d="M99 9.7c-1 0-2-.3-2.6-1-.7-.7-1.1-1.6-1.1-2.5 0 1-.4 1.8-1 2.5-.8.7-1.7 1-2.6 1 1 0 1.8.4 2.5 1.1.7.7 1 1.6 1 2.5.1-1 .5-1.8 1.2-2.5.6-.7 1.6-1 2.5-1z" fill="#D22856"/>
+                <path d="M43.3 19h.7A2.5 2.5 0 0042 18a2 2 0 01-2-1.4l-2 .8h.2c.5 0 1 .2 1.4.6.4.4.6.9.6 1.4v.3a9 9 0 013.2-.5z" fill="#fff"/>
+                <path d="M60.7 27.6l-5.2-21C55.2 4.2 53 0 47 0c-.4 0-.8.2-1 .4a1.5 1.5 0 000 2.1c.2.3.6.5 1 .5 4.9 0 5.6 3.6 5.7 4l4.7 19.5h-2a11.7 11.7 0 00-5.4-8.4 2.5 2.5 0 00-1.5 2.3v.2a9.1 9.1 0 014 7.4l-.1 1.5c-.4 2-1.4 4-3 5.4a9.1 9.1 0 01-11.9 0 8.8 8.8 0 01-3.1-7 9 9 0 011-3.9 2 2 0 01-1.4-.6 2 2 0 01-.6-1.3l-.1-.5c-1 1.5-1.6 3.2-1.8 5h-2c-.2-3-1.6-5.7-3.8-7.6a12.2 12.2 0 00-16.1 0c-2.3 2-3.7 4.6-4 7.5h-2L8.1 7.1C8.2 6.6 9 3 14 3c.4 0 .8-.2 1-.5a1.5 1.5 0 000-2c-.2-.3-.6-.5-1-.5-6 0-8.3 4.2-8.6 6.6L0 27.6A1.4 1.4 0 00.3 29a1.4 1.4 0 001.2.5h4c0 .7.2 1.3.4 1.9v-.4c0-.5.3-1 .7-1.4a2 2 0 011.9-.5 8.8 8.8 0 013-8 9.1 9.1 0 0111.9 0 8.8 8.8 0 013.2 7c0 2.3-1 4.6-2.7 6.2a9.2 9.2 0 01-11.8 1 2 2 0 01-1.3.4l-.6.2-.2.6c0 .2 0 .5-.2.8a12.2 12.2 0 0015.7-.2c2.2-2 3.6-4.6 4-7.5h1.8a12.2 12.2 0 0020 7.5c2.2-2 3.6-4.6 4-7.5h4a1.4 1.4 0 001.2-.6 1.4 1.4 0 00.2-1.3z" fill="#fff"/>
+                <path d="M51 16a4.6 4.6 0 01-4.3-2.8c-.2-.6-.3-1.1-.3-1.7 0 1.2-.5 2.3-1.3 3.1-.9.9-2 1.3-3.2 1.3 1.2 0 2.3.5 3.2 1.3.8.9 1.3 2 1.3 3.2 0-1.2.5-2.3 1.3-3.2.9-.8 2-1.3 3.2-1.3zM38 19.4c-.7 0-1.4-.3-1.9-.8s-.8-1.2-.8-2c0 .8-.3 1.5-.8 2s-1.2.8-2 .8c.8 0 1.5.3 2 .8s.8 1.2.8 1.9c0-.7.3-1.4.8-2 .5-.4 1.2-.7 2-.7zM10.8 33.6c-.7 0-1.4-.3-2-.8-.5-.5-.8-1.2-.8-1.9 0 .7-.2 1.4-.8 2-.5.5-1.2.7-2 .7.8 0 1.5.3 2 .8.6.5.8 1.2.8 2 0-.8.3-1.4.8-2 .6-.5 1.3-.8 2-.8z" fill="#D22856"/>
               </svg>
             </a>
           </div>
           <nav class="main-nav">
-            <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span>
+            <button class="main-nav__toggle">
+              <span class="visually-hidden">
+                Открыть меню
+              </span>
             </button>
             <div class="main-nav__wrapper">
               <ul class="main-nav__list site-list">
                 <li class="site-list__item site-list__item--active">
-                  <a class="site-list__link"><span class="site-list__link-text">Главная</span></a>
+                  <a class="site-list__link">
+                    <span class="site-list__link-text">
+                      Главная
+                    </span>
+                  </a>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__link" href="catalog.html"><span class="site-list__link-text">Фотографии</span></a>
+                  <a class="site-list__link" href="catalog.html">
+                    <span class="site-list__link-text">
+                      Фотографии
+                    </span>
+                  </a>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__link" href="form.html"><span class="site-list__link-text">Конкурс</span></a>
+                  <a class="site-list__link" href="form.html">
+                    <span class="site-list__link-text">
+                      Конкурс
+                    </span>
+                  </a>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__link" href="https://htmlacademy.ru/"><span class="site-list__link-text">HTML Academy</span></a>
+                  <a class="site-list__link" href="https://htmlacademy.ru/">
+                    <span class="site-list__link-text site-list__link-text--academy">
+                      HTML Academy
+                    </span>
+                  </a>
                 </li>
               </ul>
             </div>
           </nav>
           </div>
       </div>
-
       <section class="add">
-        <h2 class="visually-hidden">Скачайте приложение</h2>
-        <p class="add__text">Взгляните на жизнь иначе!</p>
+        <h2 class="visually-hidden">
+          Скачайте приложение
+        </h2>
+        <p class="add__text">
+          Взгляните на жизнь иначе!
+        </p>
         <div class="add__wrapper">
         </div>
         <div class="add__access">
-          <button class="add__download">Скачать приложение</button>
-          <div class="add__icons"></div>
-          <p class="add__available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <a class="add__download" href="https://www.apple.com/ru/app-store/">
+            Скачать приложение
+          </a>
+          <div class="add__icons">
+            <a class="add__apple-icon" href="https://www.apple.com/ru/app-store/">
+              <svg width="47" height="56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M39.2 29.7A12.7 12.7 0 0047 41c-1 2.9-2.3 5.6-4 8-2.4 3.4-5 6.8-8.8 7-4 0-5.1-2.3-9.6-2.3-4.4 0-5.8 2.2-9.4 2.3-3.7.1-6.7-3.7-9.1-7.1-5-7-8.8-19.7-3.7-28.2a14.5 14.5 0 0112-7c3.7-.1 7.2 2.4 9.5 2.4s6.6-3 11-2.6a13.8 13.8 0 0110.6 5.6c-.3.2-6.3 3.6-6.2 10.6zM32 9A12 12 0 0035 0c-3.3.3-6.4 1.8-8.6 4.2-1.8 2.1-3.5 5.5-3 8.7 3.2.2 6.5-1.6 8.5-4" fill="#fff"/>
+              </svg>
+            </a>
+            <a class="add__android-icon" href="https://play.google.com/store/apps?hl=ru&gl=US">
+              <svg width="43" height="47" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M34.9 14H8v19.2c0 1 .3 1.8 1 2.5.6.6 1.5 1 2.4 1.1v7.5c0 .7.4 1.4 1 2a3 3 0 004 0c.5-.6.8-1.3.9-2v-7.5h8.2v7.5c0 .7.4 1.4 1 2a3 3 0 004 0c.6-.6.9-1.3 1-2v-7.5a3.6 3.6 0 003.4-3.6V14.4l-.1-.3zM3 15.7a3 3 0 012 .9c.6.5.9 1.3.9 2V31a2.8 2.8 0 01-.9 2 3 3 0 01-2 1 3 3 0 01-2.1-1c-.6-.5-.9-1.2-.9-2V18.6a2.8 2.8 0 01.9-2 3 3 0 012-.9zM40 15.7a3 3 0 012.1.9c.6.5.9 1.3.9 2V31a2.8 2.8 0 01-.9 2 3 3 0 01-2 1 3 3 0 01-2.1-1c-.6-.5-.9-1.2-.9-2V18.6a2.8 2.8 0 01.9-2 3 3 0 012-.9zM8.2 12h26.5c0-2.7-1.2-5.3-3.2-7.2L34 .5a.3.3 0 000-.5.3.3 0 00-.5.1l-2.4 4.2A16.7 16.7 0 0021.5.9a17 17 0 00-9.6 3.4L9.5.2 9.3 0h-.2l-.2.2v.3l2.6 4.2c-2 2-3.3 4.6-3.3 7.4zm17.7-5.2c0-.3.1-.7.4-1a1.5 1.5 0 012.2 0 1.5 1.5 0 010 2.1 1.5 1.5 0 01-2.2 0c-.3-.3-.4-.7-.4-1zm-11.4 0c0-.3.2-.7.4-1a1.5 1.5 0 012.2 0 1.5 1.5 0 010 2.1A1.5 1.5 0 0115 8c-.2-.3-.4-.7-.4-1z" fill="#A4C639"/>
+            </svg>
+            </a>
+            <a class="add__microsoft-icon" href="https://www.microsoft.com/ru-ru/store/apps/windows">
+              <svg width="44" height="41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 20H0V0h21v20z" fill="#F05423"/>
+                <path d="M44 20H23V0h21v20z" fill="#84C441"/>
+                <path d="M21 41H0V21h21v20z" fill="#2DABE2"/>
+                <path d="M44 41H23V21h21v20z" fill="#F9BC15"/>
+              </svg>
+            </a>
+          </div>
+          <p class="add__available">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
         </div>
       </section>
     </header>
 
     <main class="page-main">
-      <h1 class="visually-hidden">Пинк.</h1>
-
+      <h1 class="visually-hidden">
+        Пинк
+      </h1>
       <section class="general">
-        <h2 class="visually-hidden">Устали от серости мегаполиса?</h2>
+        <h2 class="visually-hidden">
+          Устали от серости мегаполиса?
+        </h2>
         <div class="general__text-wrapper">
-          <p class="general__text">Устали от серости мегаполиса?</p>
-          <p class="general__text">Нам есть, что вам предложить!</p>
+          <p class="general__text">
+            Устали от серости мегаполиса?
+          </p>
+          <p class="general__text"
+            >Нам есть, что вам предложить!
+          </p>
         </div>
         <div class="general__list-wrapper">
           <div class="general__list-container">
             <ul class="general__list">
               <li class="general__list-item general__list-item--mood">
-                <h3 class="general__list-item-title">Поднимает настроение</h3>
-                <p class="general__list-item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                <h3 class="general__list-item-title">
+                  Поднимает настроение
+                </h3>
+                <p class="general__list-item-text">
+                  Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+                </p>
               </li>
               <li class="general__list-item general__list-item--world">
-                <h3 class="general__list-item-title">Меняет мир вокруг</h3>
-                <p class="general__list-item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить<span class="npsb-tablet">&nbsp;</span>эффект</p>
+                <h3 class="general__list-item-title">
+                  Меняет мир вокруг
+                </h3>
+                <p class="general__list-item-text">
+                  Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+                  усилить<span class="npsb-tablet">&nbsp;</span>эффект
+                </p>
               </li>
               <li class="general__list-item general__list-item--friends">
-                <h3 class="general__list-item-title">Заводит новых<span class="npsb-desktop">&nbsp;</span>друзей</h3>
-                <p class="general__list-item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                <h3 class="general__list-item-title">
+                  Заводит новых
+                  <span class="npsb-desktop">&nbsp;</span>
+                  друзей
+                </h3>
+                <p class="general__list-item-text">
+                  Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+                </p>
               </li>
             </ul>
           </div>
         </div>
         <div class="effect">
           <div class="effect__wrapper">
-            <h2 class="effect__heading">Эффект на<span class="npsb-tablet">&nbsp;</span>24 часа!</h2>
-            <p class="effect__description">Британские ученые провели исследования и доказали, что<span class="npsb-desktop">&nbsp;</span>положительный эффект от<span class="npsb-tablet">&nbsp;</span>использования приложения длится целые сутки!</p>
-            <a class="effect__link" href="#">Узнать больше об исследовании</a>
+            <h2 class="effect__heading">
+              Эффект
+              на<span class="npsb-tablet">&nbsp;</span>24 часа!
+            </h2>
+            <p class="effect__description">
+              Британские ученые провели исследования и доказали, что
+              <span class="npsb-desktop">&nbsp;</span>
+              положительный эффект от<span class="npsb-tablet">&nbsp;</span>использования
+              приложения длится целые сутки!
+            </p>
+            <a class="effect__link" href="#">
+              Узнать больше об исследовании
+            </a>
           </div>
         </div>
       </section>
-
       <section class="reviews">
         <div class="reviews__wrapper">
           <div class="reviews__items">
             <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-1" checked>
             <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-2">
             <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-3">
-
-              <article class="reviews__item reviews__item--review-peter">
-                <div class="reviews__inner-wrapper">
-                  <h4 class="reviews__title">Николай Петров</h4>
-                  <p class="reviews__intro">25 лет, водитель трамвая</p>
-                </div>
-                <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              </article>
-
-              <article class="reviews__item reviews__item--review-vasya">
-                <div class="reviews__inner-wrapper">
-                  <h4 class="reviews__title">Вася Николаев</h4>
-                  <p class="reviews__intro">30 лет, прораб</p>
-                </div>
-                <p class="reviews__content">«Не следует, однако забывать, что рамки и место обучения кадров требуют определения и уточнения систем массового участия. Товарищи! консультация с широким активом позволяет оценить значение модели развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий.»</p>
-              </article>
-
-              <article class="reviews__item reviews__item--review-kolya">
-                <div class="reviews__inner-wrapper">
-                  <h4 class="reviews__title">Коля Васечкин</h4>
-                  <p class="reviews__intro">45 лет, смотритель музея</p>
-                </div>
-                <p class="reviews__content">«Талантливые же личности живут только тем, что творят, поэтому сами по себе неинтересны. Великий поэт — подлинно великий поэт — самое непоэтическое существо на свете. Но второразрядные поэты — люди просто обворожительные. Чем невыразительнее их поэзия, тем живописнее они выглядят. Если человек выпустил книжку плохих сонетов, можно заранее сказать, что он совершенно неотразим. Жизнь такого человека наполнена той поэзией, которую он не в состоянии выразить в своих стихах. А великие поэты изливают на бумаге ту поэзию, которую не осмеливаются вносить в свою жизнь»</p>
-              </article>
-
-              <button class="reviews__toggle reviews__toggle--prev"><svg class="arrow" width="22" height="41"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left"></use></svg>предыдущий отзыв</button>
-              <button class="reviews__toggle reviews__toggle--next"><svg class="arrow" width="22" height="41"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use></svg>следующий отзыв</button>
-
-              <div class="slider-items reviews__nav">
-                <label class="slider-items__btn" for="reviews-radio-1">1</label>
-                <label class="slider-items__btn" for="reviews-radio-2">2</label>
-                <label class="slider-items__btn" for="reviews-radio-3">3</label>
+            <article class="reviews__item reviews__item--review-peter">
+              <div class="reviews__inner-wrapper">
+                <h4 class="reviews__title">
+                  Николай Петров
+                </h4>
+                <p class="reviews__intro">
+                  25 лет, водитель трамвая
+                </p>
               </div>
+              <p class="reviews__content">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </article>
+            <article class="reviews__item reviews__item--review-vasya">
+              <div class="reviews__inner-wrapper">
+                <h4 class="reviews__title">
+                  Вася Николаев
+                </h4>
+                <p class="reviews__intro">
+                  30 лет, прораб
+                </p>
+              </div>
+              <p class="reviews__content">
+                «Не следует, однако забывать, что рамки и место обучения кадров требуют определения и уточнения систем массового участия. Товарищи! консультация с широким активом позволяет оценить значение модели развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий.»
+              </p>
+            </article>
+            <article class="reviews__item reviews__item--review-kolya">
+              <div class="reviews__inner-wrapper">
+                <h4 class="reviews__title">
+                  Коля Васечкин
+                </h4>
+                <p class="reviews__intro">
+                  45 лет, смотритель музея
+                </p>
+              </div>
+              <p class="reviews__content">
+                «Талантливые же личности живут только тем, что творят, поэтому сами по себе неинтересны. Великий поэт — подлинно великий поэт — самое непоэтическое существо на свете. Но второразрядные поэты — люди просто обворожительные. Чем невыразительнее их поэзия, тем живописнее они выглядят. Если человек выпустил книжку плохих сонетов, можно заранее сказать, что он совершенно неотразим. Жизнь такого человека наполнена той поэзией, которую он не в состоянии выразить в своих стихах. А великие поэты изливают на бумаге ту поэзию, которую не осмеливаются вносить в свою жизнь»
+              </p>
+            </article>
+            <button class="reviews__toggle reviews__toggle--prev">
+              <svg class="arrow" width="22" height="41">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left"></use>
+              </svg>
+              предыдущий отзыв
+            </button>
+            <button class="reviews__toggle reviews__toggle--next">
+              <svg class="arrow" width="22" height="41">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use>
+              </svg>
+              следующий отзыв
+            </button>
+            <div class="slider-items reviews__nav">
+              <label class="slider-items__btn" for="reviews-radio-1">
+                1
+              </label>
+              <label class="slider-items__btn" for="reviews-radio-2">
+                2
+              </label>
+              <label class="slider-items__btn" for="reviews-radio-3">
+                3
+              </label>
+            </div>
           </div>
         </div>
       </section>
-
       <section class="rates">
         <div class="rates__wrapper">
           <div class="rates__items">
             <input class="rates__switcher" type="radio" name="rates" id="rates-radio-1">
             <input class="rates__switcher" type="radio" name="rates" id="rates-radio-2" checked>
             <input class="rates__switcher" type="radio" name="rates" id="rates-radio-3">
-
             <table class="rates__list">
               <thead class="rates__list-head">
                 <tr>
                   <th class="rates__value rates__value--empty"></th>
-                  <th class="rates__value">База<p>1,99 USD</p></th>
-                  <th class="rates__value rates__value--flag">Стандарт<p>3,99 USD</p><svg class="rates__hit" width="74" height="73"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#hit_ribbon"></use></svg></th>
-                  <th class="rates__value">Анлим<p>9,99 USD</p></th>
+                  <th class="rates__value">
+                    База
+                    <p>
+                      1,99 USD
+                    </p>
+                  </th>
+                  <th class="rates__value rates__value--flag">
+                    Стандарт
+                    <p>
+                      3,99 USD
+                    </p>
+                    <svg class="rates__hit" width="74" height="73">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#hit_ribbon"></use>
+                    </svg>
+                  </th>
+                  <th class="rates__value">
+                    Анлим
+                    <p>
+                      9,99 USD
+                    </p>
+                  </th>
                 </tr>
               </thead>
               <tbody class="rates__list-body">
                 <tr>
-                  <td class="rates__field rates__field--empty rates__field--fill">Розовый фильтр</td>
-                  <td class="rates__field rates__field--ok">Розовый фильтр
+                  <td class="rates__field rates__field--empty rates__field--fill">
+                    Розовый фильтр
+                  </td>
+                  <td class="rates__field rates__field--ok">
+                    Розовый фильтр
                     <svg class="icon-yes" width="31" height="21">
                       <use class="icon-yes__inner" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
                     </svg>
                   </td>
-                  <td class="rates__field rates__field--ok">Розовый фильтр<svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg></td>
-                  <td class="rates__field rates__field--ok">Розовый фильтр<svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg></td>
+                  <td class="rates__field rates__field--ok">
+                    Розовый фильтр
+                    <svg class="icon-yes" width="31" height="21">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+                    </svg>
+                  </td>
+                  <td class="rates__field rates__field--ok">
+                    Розовый фильтр
+                    <svg class="icon-yes" width="31" height="21">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+                    </svg>
+                  </td>
                 </tr>
                 <tr>
-                  <td class="rates__field rates__field--empty rates__field--fill">Смайлики</td>
-                  <td class="rates__field rates__field--cancel">Смайлики<svg class="icon-no" width="27" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use></svg></td>
-                  <td class="rates__field rates__field--ok">Смайлики<svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg></td>
-                  <td class="rates__field rates__field--ok">Смайлики<svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg></td>
+                  <td class="rates__field rates__field--empty rates__field--fill">
+                    Смайлики
+                  </td>
+                  <td class="rates__field rates__field--cancel">
+                    Смайлики
+                    <svg class="icon-no" width="27" height="26">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
+                    </svg>
+                  </td>
+                  <td class="rates__field rates__field--ok">
+                    Смайлики
+                    <svg class="icon-yes" width="31" height="21">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+                    </svg>
+                  </td>
+                  <td class="rates__field rates__field--ok">
+                    Смайлики
+                    <svg class="icon-yes" width="31" height="21">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+                    </svg>
+                  </td>
                 </tr>
                 <tr>
-                  <td class="rates__field rates__field--empty rates__field--fill">Комментарии</td>
-                  <td class="rates__field rates__field--cancel">Комментарии<svg class="icon-no" width="27" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use></svg></td>
-                  <td class="rates__field rates__field--cancel">Комментарии<svg class="icon-no" width="27" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use></svg></td>
-                  <td class="rates__field rates__field--ok">Комментарии<svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg></td>
+                  <td class="rates__field rates__field--empty rates__field--fill">
+                    Комментарии
+                  </td>
+                  <td class="rates__field rates__field--cancel">
+                    Комментарии
+                    <svg class="icon-no" width="27" height="26">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
+                    </svg>
+                  </td>
+                  <td class="rates__field rates__field--cancel">
+                    Комментарии
+                    <svg class="icon-no" width="27" height="26">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
+                    </svg>
+                  </td>
+                  <td class="rates__field rates__field--ok">
+                    Комментарии
+                    <svg class="icon-yes" width="31" height="21">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+                    </svg>
+                  </td>
                 </tr>
               </tbody>
             </table>
-
             <div class="slider-items slider-items--none rates__nav">
-              <label class="slider-items__btn" for="rates-radio-1">1</label>
-              <label class="slider-items__btn slider-items__btn--active" for="rates-radio-2">2</label>
-              <label class="slider-items__btn" for="rates-radio-3">3</label>
+              <label class="slider-items__btn" for="rates-radio-1">
+                1
+              </label>
+              <label class="slider-items__btn slider-items__btn--active" for="rates-radio-2">
+                2
+            </label>
+              <label class="slider-items__btn" for="rates-radio-3">
+                3
+              </label>
             </div>
           </div>
         </div>
       </section>
-
       <section class="info">
         <h2 class="info__questions">
-          Остались вопросы?<br>
+          Остались вопросы?
+          <br>
           Свяжитесь с нами!
         </h2>
           <div class="info__call">
-            <h3 class="info__call-title">Звоните:</h3>
-            <p class="info__call-text">+7 (812) 555-66-66</p>
+            <h3 class="info__call-title">
+              Звоните:
+            </h3>
+            <p class="info__call-text">
+              +7 (812) 555-66-66
+            </p>
           </div>
           <div class="info__email">
-            <h3 class="info__email-title">Пишите:</h3>
-            <a class="info__email-text">mail@htmlacademy.ru</a>
+            <h3 class="info__email-title">
+              Пишите:
+            </h3>
+            <a class="info__email-text">
+              mail@htmlacademy.ru
+            </a>
           </div>
           <div class="info__guest">
-            <h3 class="info__guest-title">Приезжайте в гости:</h3>
-            <p class="info__guest-text">ул. Большая Конюшенная, 19/8</p>
+            <h3 class="info__guest-title">
+              Приезжайте в гости:
+            </h3>
+            <p class="info__guest-text">
+              ул. Большая Конюшенная, 19/8
+            </p>
           </div>
       </section>
-
       <section class="map">
         <div style="position:relative;overflow:hidden;">
-          <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a>
-          <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323351%2C59.938461&utm_medium=mapframe&utm_source=maps&z=19.4" style="color:#eee;font-size:12px;position:absolute;top:14px;"></a>
+          <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">
+            Санкт‑Петербург
+          </a>
+          <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323351%2C59.938461&utm_medium=mapframe&utm_source=maps&z=19.4" style="color:#eee;font-size:12px;position:absolute;top:14px;">
+          </a>
           <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/-/CCUIiWusxD" style="position:relative;">
           </iframe>
           <svg class="map__triangle" width="1200" height="123" viewBox="0 0 1200 123" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -234,36 +448,48 @@
           </svg>
         </div>
       </section>
-
     </main>
 
     <footer class="footer">
       <div class="footer__logo-wrapper">
-        <svg width="145" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M71 18.5a1.3 1.3 0 011.3-1.2h7c5.1 0 8.5 2.7 8.5 7v.2c0 4.8-4 7.3-8.8 7.3h-5.5v6.8a1.3 1.3 0 01-1.2 1.4 1.3 1.3 0 01-1.3-1.4v-20zm8 11c3.8 0 6.2-2 6.2-5 0-3.2-2.4-4.9-6-4.9h-5.6v9.9H79zM92.6 18.4a1.3 1.3 0 011.3-1.4 1.3 1.3 0 011.2 1.4v20.2A1.3 1.3 0 0194 40a1.3 1.3 0 01-1.3-1.4V18.4zM101.7 18.4a1.3 1.3 0 011.2-1.2h.4a1.5 1.5 0 011.3.7l13.6 17.4v-17a1.2 1.2 0 011.2-1.2 1.2 1.2 0 011.2 1.3v20.3a1.2 1.2 0 01-.3.8 1.1 1.1 0 01-.8.3h-.2a1.7 1.7 0 01-1.3-.8l-13.9-17.8v17.5a1.3 1.3 0 01-1.2 1.2 1.2 1.2 0 01-1.2-1.2V18.4zM127 18.4a1.3 1.3 0 011.2-1.4 1.3 1.3 0 011.3 1.4v12.3l12.7-13.1c.3-.3.6-.5 1-.5a1.3 1.3 0 011.2 1.3 1.3 1.3 0 01-.4.9l-8 7.9 8.7 10.5c.2.2.3.6.3 1a1.3 1.3 0 01-.4.8 1.3 1.3 0 01-1 .4 1.2 1.2 0 01-1-.6L134.4 29l-4.8 4.8v4.9a1.3 1.3 0 01-.8 1.2 1.3 1.3 0 01-1.8-1.2V18.4z" fill="#283645"/><path fill-rule="evenodd" clip-rule="evenodd" d="M53.9 6.6l5 21.1a1.4 1.4 0 01-.7 1.7l-.7.2h-4A11.6 11.6 0 0142 39.9c-5.9 0-10.8-4.5-11.5-10.3h-2A11.8 11.8 0 0117 40c-6 0-11-4.6-11.6-10.5h-4A1.4 1.4 0 01.4 29a1.4 1.4 0 01-.2-1.3L5 6.6A8 8 0 0113.5 0c.4 0 .7.2 1 .4a1.5 1.5 0 010 2.1c-.3.3-.6.5-1 .5C8.8 3 8 6.7 8 7L3.3 26.7h2C6.2 20.8 11 16.3 17 16.3c6 0 10.8 4.5 11.6 10.3h2c.7-5.7 5.6-10.2 11.4-10.2 6 0 10.8 4.5 11.5 10.2h2.1L51 7c0-.4-.8-4.1-5.5-4.1-.4 0-.7-.2-1-.5a1.5 1.5 0 010-2c.3-.3.6-.5 1-.5A8 8 0 0154 6.6zm-28.2 23a9.1 9.1 0 000-3 8.9 8.9 0 00-8.7-7.4 8.9 8.9 0 00-8.7 10.3 8.9 8.9 0 008.7 7.6c4.4 0 8-3.3 8.7-7.5zm25 0V28c0-4.8-3.9-8.8-8.7-8.8a8.8 8.8 0 00-8.6 10.3A8.7 8.7 0 0042 37c4.4 0 8-3.2 8.6-7.4z" fill="#D22856"/></svg>
+        <svg width="145" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M71 18.5a1.3 1.3 0 011.3-1.2h7c5.1 0 8.5 2.7 8.5 7v.2c0 4.8-4 7.3-8.8 7.3h-5.5v6.8a1.3 1.3 0 01-1.2 1.4 1.3 1.3 0 01-1.3-1.4v-20zm8 11c3.8 0 6.2-2 6.2-5 0-3.2-2.4-4.9-6-4.9h-5.6v9.9H79zM92.6 18.4a1.3 1.3 0 011.3-1.4 1.3 1.3 0 011.2 1.4v20.2A1.3 1.3 0 0194 40a1.3 1.3 0 01-1.3-1.4V18.4zM101.7 18.4a1.3 1.3 0 011.2-1.2h.4a1.5 1.5 0 011.3.7l13.6 17.4v-17a1.2 1.2 0 011.2-1.2 1.2 1.2 0 011.2 1.3v20.3a1.2 1.2 0 01-.3.8 1.1 1.1 0 01-.8.3h-.2a1.7 1.7 0 01-1.3-.8l-13.9-17.8v17.5a1.3 1.3 0 01-1.2 1.2 1.2 1.2 0 01-1.2-1.2V18.4zM127 18.4a1.3 1.3 0 011.2-1.4 1.3 1.3 0 011.3 1.4v12.3l12.7-13.1c.3-.3.6-.5 1-.5a1.3 1.3 0 011.2 1.3 1.3 1.3 0 01-.4.9l-8 7.9 8.7 10.5c.2.2.3.6.3 1a1.3 1.3 0 01-.4.8 1.3 1.3 0 01-1 .4 1.2 1.2 0 01-1-.6L134.4 29l-4.8 4.8v4.9a1.3 1.3 0 01-.8 1.2 1.3 1.3 0 01-1.8-1.2V18.4z" fill="#283645"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M53.9 6.6l5 21.1a1.4 1.4 0 01-.7 1.7l-.7.2h-4A11.6 11.6 0 0142 39.9c-5.9 0-10.8-4.5-11.5-10.3h-2A11.8 11.8 0 0117 40c-6 0-11-4.6-11.6-10.5h-4A1.4 1.4 0 01.4 29a1.4 1.4 0 01-.2-1.3L5 6.6A8 8 0 0113.5 0c.4 0 .7.2 1 .4a1.5 1.5 0 010 2.1c-.3.3-.6.5-1 .5C8.8 3 8 6.7 8 7L3.3 26.7h2C6.2 20.8 11 16.3 17 16.3c6 0 10.8 4.5 11.6 10.3h2c.7-5.7 5.6-10.2 11.4-10.2 6 0 10.8 4.5 11.5 10.2h2.1L51 7c0-.4-.8-4.1-5.5-4.1-.4 0-.7-.2-1-.5a1.5 1.5 0 010-2c.3-.3.6-.5 1-.5A8 8 0 0154 6.6zm-28.2 23a9.1 9.1 0 000-3 8.9 8.9 0 00-8.7-7.4 8.9 8.9 0 00-8.7 10.3 8.9 8.9 0 008.7 7.6c4.4 0 8-3.3 8.7-7.5zm25 0V28c0-4.8-3.9-8.8-8.7-8.8a8.8 8.8 0 00-8.6 10.3A8.7 8.7 0 0042 37c4.4 0 8-3.2 8.6-7.4z" fill="#D22856"/>
+        </svg>
       </div>
       <div class="footer__wrapper">
         <ul class="footer__social-list social">
           <li class="footer__social-list-item">
             <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">
-              <svg width="18" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.6.2c.6-.2 1.4-.3 2 0 .8.1 1.4.5 1.8 1l2.1-.6c0 .3 0 .6-.2 1l-.7.7a1.8 1.8 0 001.4-.5 3 3 0 01-1.7 1.9C16.1 10 13 14.2 5.7 14H5c-.4 0-4.4-.4-5.1-1.8 1.8.3 3.5-.1 5-1-1-.3-2.9-.5-3.2-2.8.4.1.8.2 1.2 0C1.8 7.8.3 7 .4 5c.4.3 1 .5 1.4.4-.7-.2-2-3-.9-4.6 2 1.7 4 3.4 7.6 3.5.2-2 1.2-3.5 3-4.1z" fill="#D22856"/></svg>
+              <svg width="18" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.6.2c.6-.2 1.4-.3 2 0 .8.1 1.4.5 1.8 1l2.1-.6c0 .3 0 .6-.2 1l-.7.7a1.8 1.8 0 001.4-.5 3 3 0 01-1.7 1.9C16.1 10 13 14.2 5.7 14H5c-.4 0-4.4-.4-5.1-1.8 1.8.3 3.5-.1 5-1-1-.3-2.9-.5-3.2-2.8.4.1.8.2 1.2 0C1.8 7.8.3 7 .4 5c.4.3 1 .5 1.4.4-.7-.2-2-3-.9-4.6 2 1.7 4 3.4 7.6 3.5.2-2 1.2-3.5 3-4.1z" fill="#D22856"/>
+              </svg>
             </a>
           </li>
           <li class="footer__social-list-item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-              <svg width="9" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 3.2H9V0H6C2.8.2 1.6 2.3 2 5.8H0v3.4h2V18h4V9.2h3V5.8H6c0-1 0-2.3.5-2.6z" fill="#D22856"/></svg>
+              <svg width="9" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.5 3.2H9V0H6C2.8.2 1.6 2.3 2 5.8H0v3.4h2V18h4V9.2h3V5.8H6c0-1 0-2.3.5-2.6z" fill="#D22856"/>
+              </svg>
             </a>
           </li>
           <li class="footer__social-list-item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <svg width="15" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.8 12.8a1.2 1.2 0 01-1.3 0l-.4-.4a1 1 0 010-.6V.6L.5.2a1.3 1.3 0 011.3 0l12.4 5.5c1 .4 1 1.2 0 1.6L1.8 12.8z" fill="#D22856"/></svg>
+              <svg width="15" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.8 12.8a1.2 1.2 0 01-1.3 0l-.4-.4a1 1 0 010-.6V.6L.5.2a1.3 1.3 0 011.3 0l12.4 5.5c1 .4 1 1.2 0 1.6L1.8 12.8z" fill="#D22856"/>
+              </svg>
             </a>
           </li>
         </ul>
       </div>
       <div class="footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="copyright__text">Разработано</span>
-          <svg class="copyright__icon" width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4V26l13.5 8L27 26V1.4L13.6 0zm11.6 25l-11.7 7-11.7-7V15l11.7 6.8v1.3l-8-4.7v1.2l8 4.8v1.3l-8-4.8v1.2l8 4.9 8.1-4.9V17l3.6-2.1V25zm0-11.5L22 15.3l-1.5 1-7-4.3v1.2l6 3.6-.2.1-.8.5-5-3v1.3l3.9 2.3-1 .6-3-1.7v1.2l2 1.2-2 1.1-11.6-6.8 11.6-7 11.8 6.9zm0-1.3L13.4 5.3l-11.6 7V3l11.7-1.2L25.2 3v9.2z" fill="#D22856"/></svg>
+          <span class="copyright__text">
+            Разработано
+          </span>
+          <svg class="copyright__icon" width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6 0h-.1L0 1.4V26l13.5 8L27 26V1.4L13.6 0zm11.6 25l-11.7 7-11.7-7V15l11.7 6.8v1.3l-8-4.7v1.2l8 4.8v1.3l-8-4.8v1.2l8 4.9 8.1-4.9V17l3.6-2.1V25zm0-11.5L22 15.3l-1.5 1-7-4.3v1.2l6 3.6-.2.1-.8.5-5-3v1.3l3.9 2.3-1 .6-3-1.7v1.2l2 1.2-2 1.1-11.6-6.8 11.6-7 11.8 6.9zm0-1.3L13.4 5.3l-11.6 7V3l11.7-1.2L25.2 3v9.2z" fill="#D22856"/>
+          </svg>
         </a>
       </div>
     </footer>

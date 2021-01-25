@@ -53,7 +53,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
+    width: 960px;
     grid-column-gap: 20px;
     grid-row-gap: 52px;
     margin: auto;
@@ -103,7 +103,7 @@
 
   @media (min-width: @desktop-width) {
     top: 54px;
-    right: 131px;
+    right: 10px;
   }
 }
 
@@ -120,13 +120,20 @@
 
   @media (min-width: @desktop-width) {
     position: relative;
-    width: 1200px;
+    width: 960px;
     margin: 0 auto;
     grid-column-start: 1;
     grid-column-end: -1;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-template-rows: 506px 95px;
+  }
+}
+
+.photo__list-item:first-child .photo__img-link-wrapper {
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    margin-left: -120px;
   }
 }
 
@@ -229,6 +236,7 @@
     width: 940px;
     height: 96px;
     margin: 0 auto 0;
+    margin-left: 10px;
     grid-template-rows: 22px 35px;
     grid-template-columns: 1fr 135px;
     padding: 26px 15px 10px 27px;
@@ -283,25 +291,45 @@
   color: @deepred;
   font-size: 12px;
   text-transform: uppercase;
-  padding: 0 0 0 32px;
-  background-image: url("../../img/heart.svg");
-  background-repeat: no-repeat;
-  background-position: 0 1px;
+  max-width: 220px;
+  height: 17px;
+  margin: 14px 0 0 0;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    padding: 3px 32px 0 0;
-    background-position: 105px 3px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 255px;
+    margin: 2px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 3px 32px 0 0;
-    background-position: 106px 4px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 257px;
+    margin: 2px 0 0 0;
+  }
+}
+
+.photo__likes-button {
+  border: none;
+  background-color: transparent;
+  width: 13px;
+  height: 17px;
+  margin: 0 15px 0 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 1;
   }
 }
 
 .photo__list-item:not(:first-child) .photo__author-likes {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    background-position: 229px 4px;
+    // max-width: 119px;
   }
 
   @media (min-width: @desktop-width) {

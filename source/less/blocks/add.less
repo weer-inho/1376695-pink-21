@@ -22,7 +22,7 @@
 
   @media (min-width: @desktop-width) {
     width: 940px;
-    min-height: 645px;
+    min-height: 743px;
     background-image: url("../../img/phone-desktop.png");
     background-position: 16px bottom;
     background-repeat: no-repeat;
@@ -31,7 +31,7 @@
     grid-column-start: 1;
     grid-column-end: -1;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 213px 1fr;
+    grid-template-rows: 311px 1fr;
     margin: auto auto 0;
     padding: 0;
 
@@ -92,7 +92,7 @@
 
   @media (min-width: @desktop-width) {
     font-size: 50px;
-    margin: 0 0 0 0;
+    margin: 99px 0 0 0;
     line-height: 138%;
     width: 300px;
   }
@@ -122,12 +122,14 @@
   width: 280px;
   height: 55px;
   margin: 0 auto;
+  padding: 12px 0 0 0;
   background-color: #1d2631;
   font-family: "Open Sans Bold", "Arial", serif;
   font-size: 18px;
   color: @white;
   border-radius: 30px;
   border: 3px solid @white;
+  text-decoration: none;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     background-color: transparent;
@@ -139,6 +141,7 @@
     width: 300px;
     font-size: 21px;
     margin: 0 auto 0 0;
+    padding: 10px 0 0 0;
   }
 }
 
@@ -156,19 +159,38 @@
 }
 
 .add__icons {
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto 0;
-  padding: 30px 0 0;
   height: 55px;
   width: 204px;
-  background-image:
-    url("../../img/apple-logo.svg"),
-    url("../../img/android-logo.svg"),
-    url("../../img/microsoft-logo.svg");
-  background-repeat: no-repeat;
-  background-position: left bottom, center bottom, right bottom;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 207px;
+  }
 
   @media (min-width: @desktop-width) {
     margin: 0 auto 0 48px;
+  }
+}
+
+.add__android-icon {
+  margin: 6px 0 0 0;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    margin: 8px 0 0 0;
+  }
+}
+
+.add__microsoft-icon {
+  margin: 12px 0 0 0;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    margin: 9px 4px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 12px 4px 0 0;
   }
 }
 
