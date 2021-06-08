@@ -42,6 +42,7 @@ const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff, woff2}",
     "source/js/**",
+    "source/css/**",
     "source/img/**",
     "source/*.ico"
   ], {
@@ -102,7 +103,7 @@ exports.html = html;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
